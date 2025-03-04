@@ -4,15 +4,22 @@ nav_order: 1
 title: Accueil
 ---
 
-# Bienvenue sur notre documentation
+# Bienvenue sur la page dédiée au "Robot Bipède"
 
-Bienvenue dans la documentation du projet XY. Ce site a pour but de fournir toutes les informations nécessaires pour comprendre, utiliser et reproduire efficacement notre projet.
+<div style="background-color:rgba(225, 225, 225, 0.7); padding: 20px;">
+  Explorez la documentation technique et les recherches réalisées par notre équipe pour la conception d'un robot bipède.
+</div>
 
-![Illustration vectorielle colorée avec un fond blanc, montrant un atelier équipé pour un projet de conception mécanique, électronique et informatique](images/illustration.png)
+## Le Projet en Bref
 
-## À propos du Projet
+<strong>Quel est le but ? À qui est-il destiné ? Quels problèmes souhaitons-nous résoudre ?</strong>
 
-Décrivez ici en quelques lignes l'objectif et l'aperçu général de votre projet. Quel est son but ? À qui est-il destiné ? Quels problèmes cherche-t-il à résoudre ?
+<p style="text-align: justify;">
+Le but de ce projet est de concevoir un robot bipède fonctionnel, capable de se déplacer et d’évoluer dans un environnement donné. À travers cette démarche, nous visons à approfondir nos compétences techniques et à bâtir un socle de connaissances solides dans le domaine de la robotique. Ce projet s'adresse aux passionnés de robotique, aux chercheurs et aux étudiants désireux d'explorer de nouvelles approches. Nous cherchons ainsi à résoudre les défis liés à la locomotion robotique et à la stabilité dynamique, des problématiques essentielles pour la robotique autonome.
+</p>
+
+<div style="text-align: justify;"><strong>Explorez la documentation ci-dessous pour en savoir plus sur notre approche, nos algorithmes et le développement de notre prototype</strong></div>
+
 
 ## Poster
 
