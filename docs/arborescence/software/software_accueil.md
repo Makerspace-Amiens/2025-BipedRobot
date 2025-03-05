@@ -1,8 +1,8 @@
 ---
 layout: default
 nav_order: 4
-title: Architecture Logicielle
+title: Logiciel
 has_children: true
 ---
 
-# Architecture Logicielle 
+# Logiciel

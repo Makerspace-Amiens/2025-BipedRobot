@@ -1,7 +1,7 @@
 ---
 layout: default
 nav_order: 5
-title: Stratégie de Marche et d'Equilibre
+title: Stratégies Utilisées
 has_children: true
 ---
 

@@ -25,8 +25,6 @@ Le but de ce projet est de concevoir un robot bipède fonctionnel, capable de se
 
 Ici vous publierez le poster de votre projet.
 
-![Poster projet](images/poster.jpg)
-
 ## Vidéo
 
 Ici vous publierez la vidéo de votre projet. 
@@ -37,7 +35,5 @@ Ici vous publierez la vidéo de votre projet.
 - Des plans du fonctionnement (même basique ou des éléments séparés)
 - Une conclusion
 - Si en stockage local : <50mo
-
-<video src="images/intro_amiens.mp4" controls title="Title"  style="width: 100%;"></video>
 
 ---
