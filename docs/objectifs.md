@@ -1,6 +1,6 @@
 ---
 layout: default
-nav_order: 3
+nav_order: 2
 title: Objectifs du Projet
 ---
 
@@ -32,7 +32,7 @@ L'objectif principal du projet est de concevoir un robot bipède capable de marc
 
 ## 2. Quels sont les enjeux et les objectifs à atteindre ?
 
-#### D'un point de vue technique...
+#### D'un point de vue technique, 75h pour réaliser...
 
 - **Coordination des mouvements :** Assurer la stabilité et l'équilibre pendant les déplacements.
 - **Optimisation des trajectoires de marche :** Garantir la fluidité et l'efficacité des déplacements.
