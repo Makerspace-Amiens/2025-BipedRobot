@@ -4,7 +4,6 @@ nav_order: 2
 title: Objectifs du Projet
 ---
 
-
 # Objectifs du Projet
 
 ## 1. Objectif Principal et Spécifiques 
