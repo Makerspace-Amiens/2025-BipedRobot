@@ -1,25 +1,26 @@
-# Template-project
+# Robot Bipède
 
-Template pour la création d'un repo type projet pour le MakerSpace. Doc gérée via le thème [Just-The-Docs](https://just-the-docs.com) en vanilla.
+(en cours de développement)
 
-## Bienvenue sur Notre Projet
+## Description
 
-Ce repository est le cœur de notre projet. Ici, vous trouverez toutes les ressources nécessaires pour comprendre, utiliser et contribuer à notre projet.
+Le projet **Robot Bipède** consiste à concevoir, développer et tester un robot autonome à deux jambes, capable de se déplacer de manière stable et contrôlée. Ce robot utilise des capteurs pour ajuster ses mouvements et maintenir son équilibre tout en marchant. L'objectif de ce projet est d'explorer les techniques de contrôle des moteurs, de gestion des capteurs, de stabilisation et d'optimisation de la marche.
 
-### Contenu du Repository
+## Objectifs du projet
+- Concevoir un prototype fonctionnel de robot bipède.
+- Développer un programme de contrôle des mouvements et de la stabilisation.
+- Fournir une documentation claire et précise pour l'installation, la configuration et le développement.
 
-- **Documentation :** Toutes les documentations techniques et guides d'utilisation sont disponibles dans le dossier `docs`. Voir le site de doc associé. 
-- **project :** Toutes les sources de notre projet.
+## Structure du projet
+- **`docs/`** : Contient la documentation du projet (installation, guide utilisateur, algorithmes utilisés, site web, etc.).
+- **`project/`** : Regroupe l'ensemble des détails du projet, incluant les parties software et hardware.
 
-### Comment Utiliser ce Repository ?
+## Prérequis
 
-- Pour commencer, consultez la documentation dans le dossier `docs`.
-- Si vous souhaitez contribuer au projet, veuillez lire nos directives de contribution.
 
-## Contribution
+## Auteurs 
 
-Nous accueillons et apprécions toute contribution. Si vous souhaitez contribuer, veuillez consulter notre guide de contribution pour connaître nos attentes et notre processus.
+- (houda à mettre)
+- [LE ROY Hubert](https://github.com/HubertLeRoy1521)
+- [LELEU Clémence](https://github.com/celmnce)
 
-## Contact
-
-Si vous avez des questions ou des suggestions, n'hésitez pas à nous contacter.

@@ -24,6 +24,8 @@ Le répertoire **`software/`** contient tout le code nécessaire pour le bon fon
 - Intégrer des fonctionnalités d'intelligence artificielle pour améliorer la prise de décisions dans les déplacements.
 - Créer une base de code facile à tester, à étendre et à maintenir.
 
+## Prérequis
+
 ## Auteurs
 - [LELEU Clémence](https://github.com/celmnce)
 
