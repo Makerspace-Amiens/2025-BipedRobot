@@ -26,6 +26,18 @@ Le répertoire **`software/`** contient tout le code nécessaire pour le bon fon
 
 ## Prérequis
 
+Avant de commencer à développer sur ce projet, assurez-vous d'avoir les éléments suivants installés et configurés :
+
+Système d'exploitation : Windows, Linux ou macOS
+
+Python 3.8+ avec pip
+
+Compilateur C++ : GCC (Linux/macOS) ou MinGW/MSVC (Windows)
+
+Base de données : MySQL et/ou MongoDB installés et configurés
+
+VS Code avec les extensions recommandées
+
 ## Auteurs
 - [LELEU Clémence](https://github.com/celmnce)
 
