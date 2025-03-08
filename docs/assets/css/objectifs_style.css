@@ -1,0 +1,82 @@
+.bubbles-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+/* Structure de chaque bulle */
+.bubble-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Style des bulles */
+.bubble {
+    width: 280px;
+    height: 120px;
+    padding: 15px;
+    background-color: rgb(161, 16, 16);
+    color: white;
+    border-radius: 30px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+/* Apparition progressive des bulles */
+.bubble:nth-child(1) { animation-delay: 0s; }
+.bubble:nth-child(2) { animation-delay: 0.5s; }
+.bubble:nth-child(3) { animation-delay: 1s; }
+
+/* Flèche sous la bulle */
+.arrow {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 15px solid gray;
+    margin: 10px 0;
+}
+
+/* Texte des sous-objectifs */
+.sub-objective {
+    width: 280px;
+    height: 80px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    color: #333;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: normal;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Animation d'apparition */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .bubbles-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .bubble, .sub-objective {
+        width: 90%;
+    }
+}
