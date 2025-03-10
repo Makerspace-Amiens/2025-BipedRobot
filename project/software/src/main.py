@@ -1,1 +1,0 @@
-print("Environnement bien configuré !")

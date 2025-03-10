@@ -17,7 +17,6 @@ Le projet **Robot Bipède** consiste à concevoir, développer et tester un robo
 
 ## Prérequis
 
-
 ## Auteurs 
 
 - (houda à mettre)
