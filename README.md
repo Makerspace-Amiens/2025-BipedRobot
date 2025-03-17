@@ -19,7 +19,7 @@ Le projet **Robot Bipède** consiste à concevoir, développer et tester un robo
 
 ## Auteurs 
 
-- (houda à mettre)
+- [HOURIE HOUDA](https://github.com/houdahourie)
 - [LE ROY Hubert](https://github.com/HubertLeRoy1521)
 - [LELEU Clémence](https://github.com/celmnce)
 

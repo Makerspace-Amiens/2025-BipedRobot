@@ -17,7 +17,7 @@ Le répertoire **`hardware/`** regroupe les documents liés à la conception mat
 - Concevoir un matériel robuste incluant les circuits électroniques et les modèles 3D pour le robot.
 
 ## Auteurs
-- (houda à mettre)
+- [HOURIE HOUDA](https://github.com/houdahourie)
 - [LE ROY Hubert](https://github.com/HubertLeRoy1521)
 - [LELEU Clémence](https://github.com/celmnce)
 
