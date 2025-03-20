@@ -128,7 +128,23 @@ parent : Logiciel
     </div>
 </div>
 
-<!-- Mettre logo de python -->
+## Choix de l'IDE : **Pourquoi Visual Studio Code ?**
+
+<br>
+<div class="logos">
+    <img src="{{ site.baseurl }}/assets/img/logos/vscode.png" alt="VS Code Logo">
+</div><br>
+
+<div style="text-align: justify;">
+    <div>      
+        <ul>
+            <li><strong>Légèreté : </strong> : VS Code est un éditeur léger mais puissant, parfait pour le développement Python. Il permet de travailler efficacement sans être aussi lourd qu'un IDE complet comme PyCharm.</li><br>
+            <li><strong>Extensibilité : </strong> : Grâce à un large écosystème de plugins, VS Code offre une personnalisation facile pour le développement Python, y compris l'intégration de bibliothèques tierces, des outils de gestion de version, des extensions pour la gestion des serveurs, etc.</li><br>
+            <li><strong>Support pour Python :</strong> : VS Code dispose d'une extension Python officielle qui facilite la gestion de l'environnement Python, l'exécution de tests, le débogage, et l'autocomplétion.</li>
+        </ul>
+    </div>
+</div>
+
 
 ## Installation & Configuration
 
@@ -153,6 +169,16 @@ parent : Logiciel
     <th class="tg-eqth">Etapes d'Installation</th>
   </tr></thead>
 <tbody>
+ <tr>
+    <td class="tg-fymr">VS Code</td>
+    <td class="tg-0pky">
+     1. Télécharger depuis <a href="https://code.visualstudio.com/download" target="_blank">visualstudio.com</a><br>
+     2. Installe-le selon les instructions pour ton système d’exploitation<br>
+     3. Ouvre VS Code et installe l'extension Python 
+        <br>- Va dans la barre latérale à gauche et clique sur l'icône des Extensions
+        <br>- Installe Python <i>(comme ci-dessous)</i>
+    </td>
+  </tr>
   <tr>
     <td class="tg-fymr">Python</td>
     <td class="tg-0pky">
