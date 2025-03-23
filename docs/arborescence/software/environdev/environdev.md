@@ -1,6 +1,6 @@
 ---
 layout: default
-nav_order: 2
+nav_order: 1
 title: Environnement
 parent : Logiciel
 ---
@@ -116,7 +116,6 @@ parent : Logiciel
   </tr>
 </tbody></table>
 
-
 <div style="text-align: justify;">
     <div>
         <h3>Notre choix final se porte sur Python. <strong>Pourquoi ?</strong></h3>
@@ -144,7 +143,6 @@ parent : Logiciel
         </ul>
     </div>
 </div>
-
 
 ## Installation & Configuration
 
