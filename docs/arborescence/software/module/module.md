@@ -5,9 +5,6 @@ title: Modules Principaux
 parent : Logiciel
 ---
 
-
-<a href="{{ site.baseurl }}/arborescence/software/module/pid">Aller à la nouvelle page</a>
-
 # Listes de Modules 
 
 <p style="text-align: justify;"> Chaque module est conçu pour remplir une fonction clé, allant du contrôle des moteurs à la gestion de l'énergie, en passant par la stabilisation et la communication interne. Ces modules travaillent de manière intégrée pour assurer la performance et la stabilité du robot. Vous trouverez également les algorithmes utilisés pour optimiser chaque fonction. </p>
