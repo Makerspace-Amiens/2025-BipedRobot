@@ -5,6 +5,9 @@ title: Modules Principaux
 parent : Logiciel
 ---
 
+
+<a href="{{ site.baseurl }}/arborescence/software/module/pid">Aller à la nouvelle page</a>
+
 # Listes de Modules 
 
 <p style="text-align: justify;"> Chaque module est conçu pour remplir une fonction clé, allant du contrôle des moteurs à la gestion de l'énergie, en passant par la stabilisation et la communication interne. Ces modules travaillent de manière intégrée pour assurer la performance et la stabilité du robot. Vous trouverez également les algorithmes utilisés pour optimiser chaque fonction. </p>
@@ -40,12 +43,12 @@ parent : Logiciel
   <tr>
     <td class="tg-dvid">Commande Moteur</td>
     <td class="tg-y698">Contrôle des moteurs du robot pour les mouvements de base (avancer, reculer, tourner)</td>
-    <td class="tg-y698">Proportionnel Intégral Dérivé</td>
+    <td class="tg-y698"><a href="{{ site.baseurl }}/arborescence/software/module/pid">Proportionnel Intégral Dérivé</a></td>
   </tr>
   <tr>
     <td class="tg-fymr">Stabilisation</td>
     <td class="tg-0pky">Maintien de l’équilibre du robot, gestion des déplacements</td>
-    <td class="tg-0pky">Proportionnel Intégral Dérivé, Régulateur Quadratique Linéaire, Filtrage Kalman</td>
+    <td class="tg-0pky"><a href="{{ site.baseurl }}/arborescence/software/module/pid">Proportionnel Intégral Dérivé</a>, Régulateur Quadratique Linéaire, Filtrage Kalman</td>
   </tr>
   <tr>
     <td class="tg-dvid">Acquisition de données</td>
