@@ -2,12 +2,12 @@
 layout: default
 nav_order: 1
 title: Environnement
-parent : Logiciel
+parent: Logiciel
 ---
 
-# Environnement de Développement 
+# Environnement de Développement
 
-## Outils et Langage : Python ou C++ ? 
+## Outils et Langage : Python ou C++ ?
 
 <style>
 .logos {
@@ -17,11 +17,11 @@ parent : Logiciel
 }
 
 .logos img {
-    width: 130px; 
+    width: 120px; 
     height: auto;
     background-color: transparent;
 }
-    </style>
+</style>
 <br><br>
 
 <div class="logos">
@@ -38,14 +38,14 @@ parent : Logiciel
 .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
   font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
 .tg .tg-qt50{background-color:#001258;border-color:inherit;color:#ffffff;font-family:Verdana, Geneva, sans-serif !important;
-  font-size:11px;font-weight:bold;text-align:center;vertical-align:top}
-.tg .tg-b131{background-color:#efefef;border-color:inherit;font-size:11px;text-align:center;vertical-align:top}
+  font-size:12px;font-weight:bold;text-align:center;vertical-align:top}
+.tg .tg-b131{background-color:#efefef;border-color:inherit;font-size:12px;text-align:center;vertical-align:top}
 .tg .tg-dkpo{background-color:#001258;border-color:inherit;color:#ffffff;font-family:Verdana, Geneva, sans-serif !important;
-  font-size:11px;font-weight:bold;text-align:center;vertical-align:middle}
-.tg .tg-gzo9{border-color:inherit;font-size:11px;text-align:center;vertical-align:top}
-.tg .tg-irt2{background-color:#efefef;border-color:inherit;font-size:11px;font-weight:bold;text-align:left;vertical-align:top}
-.tg .tg-0p48{border-color:inherit;font-size:11px;font-weight:bold;text-align:left;vertical-align:top}
-.tg .tg-1dax{border-color:inherit;font-size:11px;text-align:center;vertical-align:middle}
+  font-size:12px;font-weight:bold;text-align:center;vertical-align:middle}
+.tg .tg-gzo9{border-color:inherit;font-size:12px;text-align:center;vertical-align:top}
+.tg .tg-irt2{background-color:#efefef;border-color:inherit;font-size:12px;font-weight:bold;text-align:left;vertical-align:top}
+.tg .tg-0p48{border-color:inherit;font-size:12px;font-weight:bold;text-align:left;vertical-align:top}
+.tg .tg-1dax{border-color:inherit;font-size:12px;text-align:center;vertical-align:middle}
 </style>
 <table class="tg" style="undefined;table-layout: fixed; width: 568px"><colgroup>
 <col style="width: 164.272727px">
@@ -60,69 +60,60 @@ parent : Logiciel
   </tr></thead>
 <tbody>
   <tr>
-    <td class="tg-irt2">Facilité d'Apprentissage</td>
-    <td class="tg-b131"><span style="background-color:#C9FFF5">Très accessible</span></td>
-    <td class="tg-b131">Plus complexe, nécessite une meilleure compréhension des concepts bas-niveau</td>
+    <td class="tg-irt2">Accessibilité et apprentissage</td>
+    <td class="tg-b131"> Très accessible pour les débutants grâce à une syntaxe simple </td>
+    <td class="tg-b131">Nécessite une bonne compréhension des concepts avancés</td>
   </tr>
   <tr>
-    <td class="tg-0p48">Vitesse d'exécution</td>
-    <td class="tg-gzo9">Moins rapide, interprété</td>
-    <td class="tg-1dax"><span style="background-color:#C9FFF5">Plus rapide, compilé, donc meilleure performance en termes de vitesse d'exécution</span></td>
+    <td class="tg-0p48">Performance (temps réel)</td>
+    <td class="tg-gzo9">Moins performant en termes de vitesse d'exécution, mais suffisant pour des tâches simples</td>
+    <td class="tg-1dax"> Excellente performance pour des applications temps réel, comme la robotique </td>
   </tr>
   <tr>
     <td class="tg-irt2">Gestion de la mémoire</td>
-    <td class="tg-b131"><span style="background-color:#C9FFF5">Automatique via le garbage collector</span></td>
-    <td class="tg-b131">Moins de bibliothèque prête à l'emploi pour la robotique </td>
+    <td class="tg-b131"> Automatique via le garbage collector </td>
+    <td class="tg-b131">Contrôle manuel, permettant une gestion précise mais complexe de la mémoire</td>
   </tr>
   <tr>
-    <td class="tg-0p48">Bibliothèque</td>
-    <td class="tg-gzo9"><span style="background-color:#C9FFF5">Large écosystème de bibliothèques (pySerial, NumPy, etc.)</span></td>
-    <td class="tg-gzo9">Moins de bibliothèques prêtes à l'emploi pour la robotique, mais plus puissant pour des applications bas-niveau</td>
+    <td class="tg-0p48">Bibliothèques et écosystème</td>
+    <td class="tg-gzo9"> Large choix de bibliothèques pour le machine learning, l'IA, et la robotique (ex: NumPy, PySerial) </td>
+    <td class="tg-gzo9">Moins d'options pour des applications robotiques générales, mais des bibliothèques comme ROS et OpenCV offrent une grande puissance</td>
   </tr>
   <tr>
-    <td class="tg-irt2">Utilisation IA</td>
-    <td class="tg-b131"><span style="background-color:#C9FFF5">Idéal pour l'intelligence artificielle et le machine learning (TensorFlow, PyTorch)</span></td>
-    <td class="tg-b131">Moins utilisé pour l'IA, mais possible via des bibliothèques comme Dlib ou OpenCV</td>
+    <td class="tg-irt2">Prise en charge de l'IA et du Machine Learning</td>
+    <td class="tg-b131"> Excellent pour l'IA, avec des bibliothèques comme TensorFlow et PyTorch </td>
+    <td class="tg-b131">Utilisé moins fréquemment pour l'IA, mais reste viable avec Dlib, OpenCV et autres</td>
   </tr>
   <tr>
     <td class="tg-0p48">Temps de développement</td>
-    <td class="tg-gzo9"><span style="background-color:#C9FFF5">Plus rapide grâce à une syntaxe concise et à une grande bibliothèque de modules</span></td>
-    <td class="tg-gzo9">Plus long à cause de la complexité de la gestion des ressources, mais plus de contrôle</td>
+    <td class="tg-gzo9"> Plus rapide grâce à une syntaxe concise et une large base de bibliothèques </td>
+    <td class="tg-gzo9">Plus long en raison de la gestion manuelle des ressources et de la complexité du langage</td>
   </tr>
   <tr>
-    <td class="tg-irt2">Robotique</td>
-    <td class="tg-b131">Moins performant pour des tâches critiques en temps réel </td>
-    <td class="tg-b131"><span style="background-color:#C9FFF5">Excellente performance en temps réel</span></td>
+    <td class="tg-irt2">Compatibilité et intégration robotique</td>
+    <td class="tg-b131">Bonne compatibilité, mais moins adapté aux tâches critiques et en temps réel</td>
+    <td class="tg-b131"> Idéal pour des applications robotiques critiques, avec un excellent contrôle sur le matériel </td>
   </tr>
   <tr>
-    <td class="tg-0p48">Compatibilité avec le matériel</td>
-    <td class="tg-gzo9">Excellente compatibilité</td>
-    <td class="tg-gzo9"><span style="background-color:#C9FFF5">Très bonne compatibilité</span></td>
+    <td class="tg-0p48">Débogage et tests</td>
+    <td class="tg-gzo9"> Outils de débogage très accessibles avec des IDE comme VS Code et PyCharm </td>
+    <td class="tg-gzo9">Débogage plus complexe mais puissant avec des outils comme GDB</td>
   </tr>
   <tr>
-    <td class="tg-irt2">Débogage et tests</td>
-    <td class="tg-b131"><span style="background-color:#C9FFF5">Outils de débogage faciles d'accès avec des IDE comme VS Code, PyCharm</span></td>
-    <td class="tg-b131">Outils de débogage puissants mais plus complexes à configurer (ex. GDB)</td>
-  </tr>
-  <tr>
-    <td class="tg-0p48">Facilité d’intégration</td>
-    <td class="tg-gzo9">Facile à intégrer avec d'autres systèmes ou outils logiciels</td>
-    <td class="tg-gzo9"><span style="background-color:#C9FFF5">Meilleure Intégration avec le hardware bas-niveau et plus de flexibilité</span></td>
-  </tr>
-  <tr>
-    <td class="tg-irt2">Maintenance</td>
-    <td class="tg-b131"><span style="background-color:#C9FFF5">Facile à maintenir </span></td>
-    <td class="tg-b131">Difficile à maintenir à cause de la complexité et de la gestion des ressources</td>
+    <td class="tg-irt2">Maintenance et évolution</td>
+    <td class="tg-b131"> Facile à maintenir grâce à une grande simplicité syntaxique </td>
+    <td class="tg-b131">Plus difficile à maintenir en raison de la gestion manuelle des ressources et des complexités</td>
   </tr>
 </tbody></table>
 
 <div style="text-align: justify;">
     <div>
-        <h3>Notre choix final se porte sur Python. <strong>Pourquoi ?</strong></h3>
-        <p>Python est largement reconnu comme l'un des meilleurs langages de programmation pour les débutants souhaitant apprendre la robotique. Voici les raisons qui justifient ce choix :</p>
+        <h3>Pourquoi nous avons choisi C++ pour notre projet robotique ?</h3>
+        <p>C++ est largement considéré comme le langage de choix pour les applications robotiques en raison de ses performances et de sa flexibilité. Voici pourquoi nous avons opté pour C++ :</p>
         <ul>
-            <li><strong>Courbe d'apprentissage douce</strong> : Python est un langage facile à comprendre et à maîtriser, même pour les novices. Sa syntaxe claire et concise permet de se concentrer davantage sur la logique du programme que sur la complexité du code.</li><br>
-            <li><strong>Bibliothèques puissantes</strong> : Python dispose de nombreuses bibliothèques adaptées à la robotique, comme PySerial, RPi.GPIO, TensorFlow et OpenCV, qui facilitent l'intégration de capteurs, la gestion des moteurs, ainsi que l'implémentation de l'intelligence artificielle et de la vision par ordinateur.</li>
+            <li><strong>Performance optimale</strong> : C++ permet un contrôle direct du matériel, ce qui est essentiel pour des systèmes à haute performance et des applications temps réel.</li><br>
+            <li><strong>Contrôle sur la mémoire</strong> : C++ offre une gestion fine de la mémoire, essentielle pour les applications robotiques où la réactivité et la performance sont cruciales.</li><br>
+            <li><strong>Large écosystème en robotique</strong> : C++ est utilisé dans de nombreuses bibliothèques comme ROS (Robot Operating System), facilitant l'intégration de composants robotiques complexes.</li><br>
         </ul>
     </div>
 </div>
@@ -137,9 +128,9 @@ parent : Logiciel
 <div style="text-align: justify;">
     <div>      
         <ul>
-            <li><strong>Légèreté : </strong> : VS Code est un éditeur léger mais puissant, parfait pour le développement Python. Il permet de travailler efficacement sans être aussi lourd qu'un IDE complet comme PyCharm.</li><br>
-            <li><strong>Extensibilité : </strong> : Grâce à un large écosystème de plugins, VS Code offre une personnalisation facile pour le développement Python, y compris l'intégration de bibliothèques tierces, des outils de gestion de version, des extensions pour la gestion des serveurs, etc.</li><br>
-            <li><strong>Support pour Python :</strong> : VS Code dispose d'une extension Python officielle qui facilite la gestion de l'environnement Python, l'exécution de tests, le débogage, et l'autocomplétion.</li>
+            <li><strong>Légèreté : </strong> VS Code est un éditeur léger mais puissant, parfait pour le développement Python. Il permet de travailler efficacement sans être aussi lourd qu'un IDE complet comme PyCharm.</li><br>
+            <li><strong>Extensibilité : </strong> Grâce à un large écosystème de plugins, VS Code offre une personnalisation facile pour le développement Python, y compris l'intégration de bibliothèques tierces, des outils de gestion de version, des extensions pour la gestion des serveurs, etc.</li><br>
+            <li><strong>Support pour Python :</strong> VS Code dispose d'une extension Python officielle qui facilite la gestion de l'environnement Python, l'exécution de tests, le débogage, et l'autocomplétion.</li>
         </ul>
     </div>
 </div>
@@ -157,93 +148,72 @@ parent : Logiciel
 .tg .tg-fymr{border-color:inherit;font-weight:bold;text-align:left;vertical-align:top}
 .tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
 </style>
-<table class="tg" style="undefined;table-layout: fixed; width: 601px"><colgroup>
-<col style="width: 139.2px">
-<col style="width: 462.2px">
+<table class="tg" style="table-layout: fixed; width: 100%;">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 80%">
 </colgroup>
 <thead>
   <tr>
     <th class="tg-eqth">Outils</th>
-    <th class="tg-eqth">Etapes d'Installation</th>
-  </tr></thead>
+    <th class="tg-eqth">Étapes d'Installation</th>
+  </tr>
+</thead>
 <tbody>
- <tr>
+  <tr>
     <td class="tg-fymr">VS Code</td>
     <td class="tg-0pky">
-     1. Télécharger depuis <a href="https://code.visualstudio.com/download" target="_blank">visualstudio.com</a><br>
-     2. Installe-le selon les instructions pour ton système d’exploitation<br>
-     3. Ouvre VS Code et installe l'extension Python 
-        <br>- Va dans la barre latérale à gauche et clique sur l'icône des Extensions
-        <br>- Installe Python <i>(comme ci-dessous)</i>
+      1. Télécharger depuis <a href="https://code.visualstudio.com/download" target="_blank">visualstudio.com</a><br>
+      2. Installe-le selon les instructions pour ton système d’exploitation.<br>
     </td>
   </tr>
   <tr>
-    <td class="tg-fymr">Python</td>
-    <td class="tg-0pky">
-     1. Télécharger la dernière version de Python depuis <a href="https://www.python.org" target="_blank">python.org</a><br>
-     2. Lancer l'installateur et cocher Add Python to PATH<br>
-     3. Vérifier l'installation avec : <code>python --version</code>
+<td class="tg-fymr">C++</td>
+<td class="tg-0pky">
+  1. Télécharger et installer un compilateur comme MinGW-w64 ou MSVC.<br>
+  2. Configurer les variables d'environnement si nécessaire.<br>
+  3. Vérifier l'installation avec : <code>g++ --version</code> ou <code>cl</code> dans le terminal.<br>
 </td>
   </tr>
   <tr>
     <td class="tg-fymr">MySQL</td>
     <td class="tg-0pky">
-    1. Télécharger et installer MySQL depuis MySQL depuis <a href="https://www.mysql.com/" target="_blank"> mysql.com</a><br>
-    2. Suivre l'installation standard et configurer un utilisateur root<br>
-    3. Vérifier l'installation : <code>mysql --version</code></td>
-  </tr>
-  <tr>
-    <td class="tg-fymr">MangoDB</td>
-    <td class="tg-0pky">
-    1. Télécharger MongoDB depuis <a href="https://www.mongodb.com/" target="_blank"> mongodb.com</a><br>
-    2. Installer MongoDB Community Server et lancer mongod<br>
-    3. Vérifier l'installation avec <code>mongod --version</code></td>
-  </tr>
-  <tr>
-    <td class="tg-fymr">Dynamixel SDK</td>
-    <td class="tg-0pky">
-        1. Télécharger Dynamixel SDK depuis <a href="https://github.com/ROBOTIS-GIT/DynamixelSDK">GitHub - DynamixelSDK</a><br>
-        2. Installer Python et Pip si ce n'est pas déjà fait (<code>python --version</code>, <code>pip --version</code>)<br>
-        3. Installer Dynamixel SDK via pip : <code>pip install dynamixel-sdk</code>
+      1. Télécharger MySQL depuis <a href="https://www.mysql.com/" target="_blank">mysql.com</a><br>
+      2. Suivre l'installation standard et configurer un utilisateur root.<br>
+      3. Vérifier l'installation avec : <code>mysql --version</code> dans le terminal.
     </td>
-    </tr>
-    <tr>
-    <td class="tg-fymr">Autre bibliothèqes.....</td>
+  </tr>
+  <tr>
+    <td class="tg-fymr">MongoDB</td>
     <td class="tg-0pky">
+      1. Télécharger MongoDB depuis <a href="https://www.mongodb.com/" target="_blank">mongodb.com</a><br>
+      2. Installer MongoDB Community Server et lancer le serveur avec : <code>mongod</code><br>
+      3. Vérifier l'installation avec : <code>mongod --version</code> dans le terminal.
+    </td>
+  </tr>
+  <tr>
+    <td class="tg-fymr">PlatformIO</td>
+    <td class="tg-0pky">
+      1. Ouvrir VS Code et installer l'extension PlatformIO IDE depuis la section Extensions.<br>
+      2. Après installation, redémarrer VS Code pour activer l'extension.<br>
     </td>
   </tr>
 </tbody>
 </table>
 
-## Installation des Dépendances 
+<h2>Installation des bibliothèques</h2>
 
-<style>
-    .code-block {
-        font-family: monospace;
-        font-size: 16px;
-        display: block;
-        white-space: pre-wrap;
-        background-color:rgb(218, 212, 212);
-        padding: 10px;
-        border-radius: 5px;
-    }
-</style>
+<p style="text-align: justify;">Une fois l’environnement prêt, nous allons installer les bibliothèques nécessaires au bon fonctionnement du projet en utilisant la commande suivante : <code>pio lib install [NOM_DE_LA_BIBLIOTHÈQUE]</code></p>
 
-Pour installer les dépendances propres au projet, nous allons créer un fichier <code>requirements.txt</code>.
+<h3>Bibliothèques à installer</h3>
+<ul>
+  <li><strong>Dynamixel    </strong><code>pio lib install https://github.com/ROBOTIS-GIT/DynamixelSDK.git</code><br> 
+  Permet de contrôler les servomoteurs Dynamixel (AX-12+, etc.). Elle facilite la communication avec les moteurs via un bus série et offre des fonctions pour lire/écrire leurs paramètres (vitesse, position, couple…). <br><br>
+  </li>
+  <li><strong>feilipu/FreeRTOS    </strong><code>pio lib install feilipu/FreeRTOS@^11.1.0-3	</code><br> 
+  Implémente un système d’exploitation temps réel (RTOS) pour gérer les tâches du robot de manière efficace. Cela permet, par exemple, d’exécuter plusieurs processus en parallèle comme la gestion des moteurs et la collecte des données capteurs.<br><br></li>
 
-À l'intérieur, nous allons définir les dépendances nécessaires :
-
-<pre class="code-block">
-numpy
-scipy
-matplotlib
-pyserial
-</pre>
-
-Ensuite, dans le terminal de commande, exécutez :
-
-<pre class="code-block">pip install -r requirements.txt</pre>
-
-## Comment Exécuter le Code ? 
-
-<i>(en cours de développement)</i>
+  <li><strong>adafruit/Adafruit Unified Sensor    </strong><code>pio lib install adafruit/Adafruit Unified Sensor@^1.1.15</code><br> 
+  Fournit une interface standardisée pour l'utilisation de divers capteurs Adafruit. Utile si ton robot utilise des capteurs de position, d’accélération ou de température pour améliorer son contrôle et sa stabilité. <br><br>
+  </li>
+</ul>
