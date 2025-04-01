@@ -1,7 +1,7 @@
 ---
 layout: default
 nav_exclude: true
-title: "Contrôleur PID - Explications
+title: Contrôleur PID - Explications
 ---
 
 <style>
