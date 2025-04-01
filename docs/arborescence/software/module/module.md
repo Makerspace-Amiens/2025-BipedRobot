@@ -40,12 +40,12 @@ parent : Logiciel
   <tr>
     <td class="tg-dvid">Commande Moteur</td>
     <td class="tg-y698">Contrôle des moteurs du robot pour les mouvements de base (avancer, reculer, tourner)</td>
-    <td class="tg-y698"><a href="{{ site.baseurl }}/arborescence/software/module/pid">Proportionnel Intégral Dérivé</a></td>
+    <td class="tg-y698"><a href="{{ site.baseurl }}/arborescence/software/module/algo/pid">Proportionnel Intégral Dérivé</a></td>
   </tr>
   <tr>
     <td class="tg-fymr">Stabilisation</td>
     <td class="tg-0pky">Maintien de l’équilibre du robot, gestion des déplacements</td>
-    <td class="tg-0pky"><a href="{{ site.baseurl }}/arborescence/software/module/pid">Proportionnel Intégral Dérivé</a>, Régulateur Quadratique Linéaire, Filtrage Kalman</td>
+    <td class="tg-0pky"><a href="{{ site.baseurl }}/arborescence/software/module/algo/pid">Proportionnel Intégral Dérivé</a>, Régulateur Quadratique Linéaire, Filtrage Kalman</td>
   </tr>
   <tr>
     <td class="tg-dvid">Acquisition de données</td>
