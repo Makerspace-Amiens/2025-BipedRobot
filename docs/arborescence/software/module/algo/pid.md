@@ -4,6 +4,12 @@ nav_exclude: true
 title: Contrôleur PID - Explications
 ---
 
+<!-- KaTeX CDN -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"
+    onload="renderMathInElement(document.body);"></script>
+
 <style>
 :root {
     --primary-color:rgb(28, 80, 131);
@@ -132,6 +138,11 @@ pre {
     white-space: pre-wrap;
 }
 
+.lead {
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
 code {
     font-family: inherit;
 }
@@ -166,11 +177,7 @@ code {
         </div>
         <h2>Équation Mathématique du PID</h2>
         <div class="math-equation">
-            u(t) = K<sub>p</sub> · e(t) + K<sub>i</sub>∫e(t)dt + K<sub>d</sub> ·
-            <span style="display: inline-block; vertical-align: middle;">
-                <span style="display: block; text-align: center; border-bottom: 1px solid; line-height: 1.2;">de(t)</span>
-                <span style="display: block; text-align: center; line-height: 1.2;">dt</span>
-            </span>
+            <p>$$u(t) = K_p \cdot e(t) + K_i \int e(t) dt + K_d \cdot \frac{de(t)}{dt}$$</p>
         </div>
         <p class="justified-text">
             Un contrôleur PID agit en combinant trois termes, chacun ayant un rôle spécifique dans la régulation du système :
