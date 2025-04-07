@@ -50,7 +50,7 @@ parent : Logiciel
   <tr>
     <td class="tg-dvid">Acquisition de données</td>
     <td class="tg-y698">Collecte des données des capteurs</td>
-    <td class="tg-y698">Filtrage des données (Kalman, etc.), Filtre de complémentarité, FFT</td>
+    <td class="tg-y698">Filtrage des données (Kalman, etc.), Filtre de complémentarité,<a href="{{ site.baseurl }}/arborescence/software/module/algo/FFT">FFT</a></td>
   </tr>
   <tr>
     <td class="tg-fymr">Planification de trajectoires</td>
