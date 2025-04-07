@@ -9,7 +9,11 @@ parent : Logiciel
 
 <p style="text-align: justify;"> Chaque module est conçu pour remplir une fonction clé, allant du contrôle des moteurs à la gestion de l'énergie, en passant par la stabilisation et la communication interne. Ces modules travaillent de manière intégrée pour assurer la performance et la stabilité du robot. Vous trouverez également les algorithmes utilisés pour optimiser chaque fonction. </p>
 
-## Récapitulatif des Modules 
+<hr style="border: none; border-top: 0.05cm solid #003366;">
+
+<h2 style="text-align: center">Cliquez sur les modules et les algorithmes pour en savoir plus</h2>
+
+<hr style="border: none; border-top: 0.05cm solid #003366;">
 
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
@@ -45,12 +49,12 @@ parent : Logiciel
   <tr>
     <td class="tg-fymr">Stabilisation</td>
     <td class="tg-0pky">Maintien de l’équilibre du robot, gestion des déplacements</td>
-    <td class="tg-0pky"><a href="{{ site.baseurl }}/arborescence/software/module/algo/pid">Proportionnel Intégral Dérivé</a>, Régulateur Quadratique Linéaire, Filtrage Kalman</td>
+    <td class="tg-0pky"><a href="{{ site.baseurl }}/arborescence/software/module/algo/pid">Proportionnel Intégral Dérivé</a>, Régulateur Quadratique Linéaire,<a href="{{ site.baseurl }}/arborescence/software/module/algo/kalman">Filtrage Kalman</a></td>
   </tr>
   <tr>
     <td class="tg-dvid">Acquisition de données</td>
     <td class="tg-y698">Collecte des données des capteurs</td>
-    <td class="tg-y698">Filtrage des données (Kalman, etc.), Filtre de complémentarité,<a href="{{ site.baseurl }}/arborescence/software/module/algo/FFT">FFT</a></td>
+    <td class="tg-y698"><a href="{{ site.baseurl }}/arborescence/software/module/algo/kalman">Filtre de Kalman</a>, Filtre de complémentarité,<a href="{{ site.baseurl }}/arborescence/software/module/algo/FFT">FFT</a></td>
   </tr>
   <tr>
     <td class="tg-fymr">Planification de trajectoires</td>
@@ -80,7 +84,7 @@ parent : Logiciel
   <tr>
     <td class="tg-dvid">Surveillance du Système</td>
     <td class="tg-y698">Surveillance en temps réel de l’état du robot</td>
-    <td class="tg-y698">Modèle de diagnostic préditif, Filtrage de Kalman</td>
+    <td class="tg-y698">Modèle de diagnostic préditif, <a href="{{ site.baseurl }}/arborescence/software/module/algo/kalman">Filtrage Kalman</a></td>
   </tr>
   <tr>
     <td class="tg-fymr">Gestion d’erreurs</td>
@@ -100,7 +104,7 @@ parent : Logiciel
   <tr>
     <td class="tg-dvid">Synchronisation Capteur et Moteur</td>
     <td class="tg-y698">Synchronisation des données des capteurs et des actions des moteurs</td>
-    <td class="tg-y698">Filtrage de Kalman, synchronisation temps réel, compensation latence</td>
+    <td class="tg-y698"><a href="{{ site.baseurl }}/arborescence/software/module/algo/kalman">Filtrage Kalman</a>, synchronisation temps réel, compensation latence</td>
   </tr>
   <tr>
     <td class="tg-fymr">Base de données & Modélisation</td>
