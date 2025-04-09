@@ -64,7 +64,7 @@ parent : Logiciel
   <tr>
     <td class="tg-dvid">Algorithme de Marche</td>
     <td class="tg-y698">Gestion de la marche, coordination des mouvements des jambes pour une locomotion fluide</td>
-    <td class="tg-y698">ZMP, CPG</td>
+    <td class="tg-y698"><a href="{{ site.baseurl }}/arborescence/software/module/algo/marche/zmp">ZMP,</a>  CPG</td>
   </tr>
   <tr>
     <td class="tg-fymr">Communication Interne</td>
