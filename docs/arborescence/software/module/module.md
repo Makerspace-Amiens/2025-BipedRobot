@@ -69,7 +69,7 @@ parent : Logiciel
   <tr>
     <td class="tg-fymr">Communication Interne</td>
     <td class="tg-0pky">Communication entre les différents modules</td>
-    <td class="tg-0pky">TCP/IP, ROS 2, MQTT, Protobuf</td>
+    <td class="tg-0pky"><a href="{{ site.baseurl }}/arborescence/software/module/algo/communication/TCP.IP">TCP/IP</a>, ROS 2, MQTT, Protobuf</td>
   </tr>
   <tr>
     <td class="tg-dvid">Gestion d’énergie</td>
