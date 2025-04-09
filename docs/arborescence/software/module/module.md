@@ -49,7 +49,7 @@ parent : Logiciel
   <tr>
     <td class="tg-fymr">Stabilisation</td>
     <td class="tg-0pky">Maintien de l’équilibre du robot, gestion des déplacements</td>
-    <td class="tg-0pky"><a href="{{ site.baseurl }}/arborescence/software/module/algo/pid">Proportionnel Intégral Dérivé</a>, Régulateur Quadratique Linéaire,<a href="{{ site.baseurl }}/arborescence/software/module/algo/kalman">Filtrage Kalman</a></td>
+    <td class="tg-0pky"><a href="{{ site.baseurl }}/arborescence/software/module/algo/pid">Proportionnel Intégral Dérivé</a>, <a href="{{ site.baseurl }}/arborescence/software/module/algo/regulateur">Régulateur Quadratique Linéaire</a>,<a href="{{ site.baseurl }}/arborescence/software/module/algo/kalman">Filtrage Kalman</a></td>
   </tr>
   <tr>
     <td class="tg-dvid">Acquisition de données</td>
