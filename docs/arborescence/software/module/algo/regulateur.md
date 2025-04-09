@@ -151,7 +151,7 @@ code {
 hr {
     border: none;
     height: 2px;
-    background-color: rgb(28, 80, 131);
+    background: linear-gradient(90deg, var(--primary-color), rgba(28, 80, 131, 0.2));
     margin: 1.5rem 0;
 }
 </style>
