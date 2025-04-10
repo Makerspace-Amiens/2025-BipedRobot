@@ -127,6 +127,13 @@ Cliquez sur une carte pour accéder à la fiche technique du composant.
     font-size: 0.8rem;
   }
 
+  hr {
+    border: none;
+    height: 2px;
+    background: linear-gradient(90deg, var(--primary-color), rgba(28, 80, 131, 0.2));
+    margin: 1.5rem 0;
+}
+
   .electronic-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 25px rgba(0,0,0,0.12);
