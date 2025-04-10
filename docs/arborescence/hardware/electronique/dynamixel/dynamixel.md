@@ -186,5 +186,6 @@ h2 {
 
 <div class="notice" style="background: rgb(235, 237, 243); padding: 1em; border-left: 4px solid #1c5083;">
 <strong> Guide complet disponible :</strong>  
-Pour une procédure détaillée d'installation, connexion et dépannage, consultez le <a href="{{sitebaseurl}}/arborescence/hardware/electronique/dynamixel/wizard">Cliquez ici pour y accéder</a>
+Pour une procédure détaillée d'installation, connexion et dépannage, consultez le <a href="{{site.baseurl}}/arborescence/hardware/electronique/dynamixel/wizard">Cliquez ici pour y accéder</a>
 </div>
+
