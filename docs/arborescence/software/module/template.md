@@ -158,7 +158,6 @@ hr {
 }
 </style>
 
-
 <div class="kalman-container">
     <!-- Introduction -->
     <section id="introduction">

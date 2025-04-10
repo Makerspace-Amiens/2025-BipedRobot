@@ -184,5 +184,8 @@ h2 {
 
 ## Vérification du Matériel : Dynamixel Wizard 2.0
 <div class="notice" style="background: rgb(235, 237, 243); padding: 1em; border-left: 4px solid #1c5083;">
-<strong> Guide complet disponible :</strong>  <a href="{{ site.url }}{{ site.baseurl }}/arborescence/hardware/electronique/dynamixel/wizard"> Cliquez ici pour y accéder</a>
+<strong> Guide complet disponible :</strong><a href="{{ '/arborescence/hardware/electronique/dynamixel/wizard' | relative_url }}">
+  Cliquez ici pour y accéder
+</a>
+
 </div>
