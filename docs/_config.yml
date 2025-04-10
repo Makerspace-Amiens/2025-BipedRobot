@@ -6,6 +6,7 @@ description: Documentation du projet
 # Thème
 # remote_theme: Makerspace-Amiens/CraftTheDocs-V1.0
 theme: just-the-docs
+baseurl: "/2025-BipedRobot"
 url: https://github.com/Makerspace-Amiens
 
 # Paramètres optionnels de "Just the Docs"
