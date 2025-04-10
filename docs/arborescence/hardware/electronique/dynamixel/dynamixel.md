@@ -188,4 +188,3 @@ h2 {
 <strong> Guide complet disponible :</strong>  
 Pour une procédure détaillée d'installation, connexion et dépannage, consultez le <a href="{{site.baseurl}}/arborescence/hardware/electronique/dynamixel/wizard">Cliquez ici pour y accéder</a>
 </div>
-
