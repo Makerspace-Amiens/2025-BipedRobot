@@ -121,9 +121,9 @@ h2 {
         </tr>
         <tr>
             <td>Vitesse de rotation</td>
-            <td>0.17</td>
-            <td>0.15</td>
-            <td>sec/60° (à 12V)</td>
+            <td>59</td>
+            <td>59</td>
+            <td>tr/min (à 12V)</td>
         </tr>
         <tr>
             <td>Angle de rotation</td>
@@ -143,10 +143,97 @@ h2 {
         <tr>
             <td>Température opérationnelle</td>
             <td colspan="2">-5°C à +70°C</td>
-            <td></td>
+            <td>°C</td>
+        </tr>
+        <tr>
+            <td>Poids</td>
+            <td>53.5</td>
+            <td>53.5</td>
+            <td>g</td>
+        </tr>
+        <tr>
+            <td>Dimensions (L × H × P)</td>
+            <td colspan="2">32 × 50 × 40</td>
+            <td>mm</td>
+        </tr>
+        <tr>
+            <td>Résolution</td>
+            <td colspan="2">0.29</td>
+            <td>°</td>
+        </tr>
+        <tr>
+            <td>Mode rotation continue</td>
+            <td colspan="2">Oui</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>Type de moteur</td>
+            <td colspan="2">Aimant permanent</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>Rapport de réduction</td>
+            <td colspan="2">254:1</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>Couple de blocage</td>
+            <td colspan="2">1.5</td>
+            <td>N·m (à 12V, 1.5A)</td>
+        </tr>
+        <tr>
+            <td>Vitesse à vide</td>
+            <td colspan="2">59</td>
+            <td>tr/min (à 12V)</td>
+        </tr>
+        <tr>
+            <td>Protocole de communication</td>
+            <td colspan="2">Paquet numérique</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>ID disponibles</td>
+            <td colspan="2">254 (0-253)</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>Retour d'information</td>
+            <td colspan="2">Position, Température, Charge, Tension d'entrée</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>Matériau des engrenages</td>
+            <td colspan="2">Plastique technique (complet)</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>Matériau du boîtier</td>
+            <td colspan="2">Plastique technique (avant, milieu, arrière)</td>
+            <td>-</td>
         </tr>
     </tbody>
 </table>
+
+## Avantages et Inconvénients
+
+<div style="display: flex; gap: 20px; margin: 1.5em 0;">
+    <div style="flex: 1; background: #f0f7f0; padding: 1em; border-radius: 8px; border-left: 4px solid #4CAF50;">
+        <h3 style="color: #2E7D32; margin-top: 0;">✔ Avantages</h3>
+        <ul style="padding-left: 20px;">
+            <li><strong>Réseau facile</strong> - Contrôle de plusieurs moteurs en série via bus Dynamixel</li>
+            <li><strong>Retour d'information complet</strong> - Position, température, charge en temps réel</li>
+            <li><strong>Large plage de tension</strong> - Fonctionne de 9V à 12V</li>
+        </ul>
+    </div>    
+    <div style="flex: 1; background: #fdf0f0; padding: 1em; border-radius: 8px; border-left: 4px solid #f44336;">
+        <h3 style="color: #c62828; margin-top: 0;">✖ Inconvénients</h3>
+        <ul style="padding-left: 20px;">
+            <li><strong>Protocole propriétaire</strong> - Nécessite un convertisseur TTL/USB spécifique</li>
+            <li><strong>Poids</strong> - Plus lourd que des servos standards (53.5g)</li>
+            <li><strong>Prix</strong> - Plus coûteux qu'un servo classique</li>
+        </ul>
+    </div>
+</div>
 
 ## Communication et Contrôle 
 
@@ -183,9 +270,38 @@ h2 {
 </table>
 
 ## Vérification du Matériel : Dynamixel Wizard 2.0
-<div class="notice" style="background: rgb(235, 237, 243); padding: 1em; border-left: 4px solid #1c5083;">
-<strong> Guide complet disponible :</strong><a href="{{ '/arborescence/hardware/electronique/dynamixel/wizard' | relative_url }}">
-  Cliquez ici pour y accéder
-</a>
 
+<div style="text-align: justify; font-size: 15px; line-height: 1.6; color: #333;">
+    <p>Dynamixel Wizard est un logiciel de configuration et de diagnostic développé par ROBOTIS pour ses servomoteurs intelligents Dynamixel. Il permet de paramétrer, tester et dépanner facilement des moteurs Dynamixel via une interface intuitive.</p>
+</div>
+
+<div class="notice" style="background: #f8f9fa; padding: 1.2em; border-left: 4px solid #1c5083; margin: 1.5em 0; border-radius: 0 4px 4px 0; box-shadow: 0 1px 2px rgba(0,0,0,0.05);">
+    <strong style="font-size: 15px; color: #1c5083;"> Guide complet disponible :</strong>
+    <div style="margin-top: 8px;">
+        <a href="{{ '/arborescence/hardware/electronique/dynamixel/wizard' | relative_url }}" style="color: #2a6496; text-decoration: none; font-weight: 500;">
+            → Accéder au guide Dynamixel Wizard
+        </a>
+    </div>
+</div>
+
+<div style="text-align: justify; font-size: 15px; line-height: 1.6; color: #333; margin-bottom: 1.5em;">
+    <p>Nous avons utilisé ce logiciel pour vérifier l'état de nos servomoteurs. Les tests portaient sur :</p>
+    <ul style="margin-top: 0.5em; padding-left: 1.2em;">
+        <li>La tension d'alimentation</li>
+        <li>La qualité de la connexion</li>
+        <li>La réactivité des moteurs</li>
+        <li>La température en fonctionnement</li>
+    </ul>
+    <p>Ces vérifications ont été réalisées en suivant scrupuleusement le guide d'utilisation de Dynamixel Wizard 2.0.</p>
+</div>
+
+<div style="background-color: #f5f7fa; padding: 1em 1.2em; border-radius: 6px; margin-top: 1.5em; border-left: 3px solid #4a6ea9;">
+    <div style="font-size: 14px; color: #555; margin-bottom: 6px;">
+        <strong> Date des tests :</strong> 10/04/2025
+    </div>
+    <div style="font-size: 14px;">
+        <a href="{{site.baseurl}}/assets/xlsx/Tests_Servomoteurs_Dynamixel.xlsx" style="color: #2a6496; text-decoration: none; font-weight: 500;">
+            Télécharger les résultats complets (fichier Excel)
+        </a>
+    </div>
 </div>
