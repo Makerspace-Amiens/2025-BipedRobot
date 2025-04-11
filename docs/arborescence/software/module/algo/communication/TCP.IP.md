@@ -516,6 +516,14 @@ hr {
     </section>
 </div>
 
+<h3>Références</h3>
+<ul>
+  <li>Cerf, V., & Kahn, R. (1974). <cite>A Protocol for Packet Network Intercommunication</cite>. IEEE Transactions on Communications.</li>
+  <li>Stevens, W. R. (1994). <cite>TCP/IP Illustrated, Volume 1: The Protocols</cite>. Addison-Wesley.</li>
+  <li>DARPA. (1981). <cite>Internet Protocol Specification (RFC 791)</cite>. Defense Advanced Research Projects Agency.</li>
+  <li>Postel, J. (1981). <cite>Transmission Control Protocol (RFC 793)</cite>. Information Sciences Institute.</li>
+</ul>
+
 <script>
 function copyCode() {
     const codeBlock = event.target.closest('.code-container').querySelector('code');

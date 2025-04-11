@@ -318,6 +318,14 @@ void KalmanFilter::update(const Eigen::VectorXd& y, double dt, const Eigen::Matr
             </div>
         </div>
 
+<h3>Références</h3>
+<ul>
+  <li>Kalman, R. E. (1960). <cite>A new approach to linear filtering and prediction problems</cite>. Journal of Basic Engineering.</li>
+  <li>Welch, G., & Bishop, G. (2006). <cite>An Introduction to the Kalman Filter</cite>. University of North Carolina at Chapel Hill.</li>
+  <li>Martirosyan, H. (2014). <cite>Kalman Filter C++ Implementation</cite>. GitHub repository.</li>
+  <li>NASA. (1969). <cite>Apollo Guidance Computer and Kalman Filter</cite>. Technical Reports.</li>
+</ul>
+
 <script>
 function copyCode() {
     const code = document.querySelector('.code-container code').innerText;

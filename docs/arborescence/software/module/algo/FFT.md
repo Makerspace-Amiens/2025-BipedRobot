@@ -314,6 +314,13 @@ Eigen::VectorXcd FFT(Eigen::VectorXd& x_n)
         </div>        
     </div>
 </div>
+<h3>Références</h3>
+<ul>
+  <li>Fourier, J. (1822). <cite>Théorie analytique de la chaleur</cite>. Firmin Didot.</li>
+  <li>Cooley, J. W., & Tukey, J. W. (1965). <cite>An algorithm for the machine calculation of complex Fourier series</cite>. Mathematics of Computation.</li>
+  <li>Abdullah, E. E. (2020). <cite>FFT Implementation in C++</cite>. GitHub repository.</li>
+  <li>Smith, S. W. (1997). <cite>The Scientist and Engineer's Guide to Digital Signal Processing</cite>. California Technical Publishing.</li>
+</ul>
 
 <script>
 function copyCode() {

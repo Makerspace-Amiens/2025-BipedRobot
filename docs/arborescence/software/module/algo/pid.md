@@ -312,3 +312,11 @@ function copyCode() {
     }, 2000);
 }
 </script>
+
+<h3>Références</h3>
+<ul>
+  <li>Sperry, E. (1911). <cite>Automatic steering mechanism</cite>. U.S. Patent No. 1,000,000.</li>
+  <li>Minorsky, N. (1922). <cite>Directional stability of automatically steered bodies</cite>. Journal of the American Society of Naval Engineers, 34(2), 280-309.</li>
+  <li>Åström, K. J., & Hägglund, T. (1995). <cite>PID controllers: Theory, design, and tuning</cite> (2nd ed.). Instrument Society of America.</li>
+  <li>Mosher, N. (2018). <cite>PID Controller Implementation in C++</cite>. GitHub repository.</li>
+</ul>
