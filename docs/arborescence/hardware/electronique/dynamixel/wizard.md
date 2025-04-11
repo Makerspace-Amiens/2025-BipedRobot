@@ -282,7 +282,7 @@ hr {
   </table>
 </div>
   <div style="text-align: right; font-size: 13px; color: #666; margin-top: 10px; padding: 8px; background-color: #f5f5f5; border-radius: 0 0 8px 8px;">
-    Les tests concernant nos servomoteurs ont été réalisés le 10/04/2025 - <a href="#">Cliquez ici pour trouver les résultats obenus</a>
+    Les tests concernant nos servomoteurs ont été réalisés le 10/04/2025 - <a href="{{site.baseurl}}/assets/xlsx/Tests_Servomoteurs_Dynamixel.xlsx">Cliquez ici pour trouver les résultats obenus</a>
   </div>
 
 
