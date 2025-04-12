@@ -102,6 +102,22 @@ title: Accueil
 </div>
 
 <style>
+
+<style>
+  :root {
+    --primary: #1c5083;
+    --secondary: #4a89dc;
+    --text: #333;
+    --light-gray: #f5f7fa;
+  }
+
+hr {
+    border: none;
+    height: 2px;
+    background: linear-gradient(90deg, var(--primary-color), rgba(28, 80, 131, 0.2));
+    margin: 1.5rem 0;
+}
+
   .poster-preview:hover img {
     transform: scale(1.05);
   }
@@ -114,7 +130,7 @@ title: Accueil
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0,0.9);
+    background-color: rgba(59, 53, 75, 0.33);
     animation: fadeIn 0.3s ease-out;
     overflow: hidden;
   }

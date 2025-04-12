@@ -13,6 +13,8 @@ parent: Mécatronique et Systèmes
   Découvrez l'architecture électronique du robot, les composants clés et leurs fiches techniques détaillées. <strong>Explorez les cartes ci-dessous !</strong>
 </div>
 
+<!--Mettre schéma fonctionnel ou électrique-->
+
 ## Composants Clés
 Cliquez sur une carte pour accéder à la fiche technique du composant.
 

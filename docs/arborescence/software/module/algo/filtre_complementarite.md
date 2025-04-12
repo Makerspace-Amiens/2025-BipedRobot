@@ -1,9 +1,9 @@
 ---
 layout: default
 nav_exclude: true
-title: Filtrage de Kalman
+title: Filtre Complémentaire
 ---
-<!-- TEMPLATE POUR LES NOTIONS IMPORTANTES ALGO BASE SUR LE FILTRAGE DE KALMAN, PENSER A MODIFIER AVEC LA NOTION VOULUE-->
+<!-- TEMPLATE POUR LES NOTIONS IMPORTANTES ALGO BASE SUR LE FILTRAGE COMPLEMENTAIRE -->
 
 <!-- KaTeX CDN -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
@@ -161,72 +161,75 @@ hr {
 <div class="kalman-container">
     <!-- Introduction -->
     <section id="introduction">
-        <h2>Qu'est-ce qu'un filtre de Kalman ?</h2>
+        <h2>Qu'est-ce qu'un filtre complémentaire ?</h2>
         <hr>
         <p class="lead justified-text">
-           mettre texte
+            Le filtre complémentaire est une technique de fusion de capteurs simple mais efficace qui combine les mesures de deux capteurs ou sources de données ayant des caractéristiques spectrales complémentaires.
         </p>
         <p class="justified-text">
-           mettre texte
+            Contrairement au filtre de Kalman plus complexe, le filtre complémentaire utilise une approche basée sur les fréquences pour fusionner les données : un capteur fournit les basses fréquences (comme un gyroscope) et l'autre les hautes fréquences (comme un accéléromètre).
         </p>
         <div class="did-you-know">
             <h3>Le savais-tu ?</h3>
             <p>
-                mettre texte
+                Le filtre complémentaire est très populaire dans les systèmes embarqués car il nécessite peu de ressources de calcul tout en fournissant des résultats satisfaisants pour de nombreuses applications comme la stabilisation de drones ou la mesure d'orientation.
             </p>
         </div>
     </section>
     <!-- Principe Général -->
     <section id="principe">
-        <h2>Principe Général du Filtre de Kalman</h2>
+        <h2>Principe Général du Filtre Complémentaire</h2>
         <p class="justified-text">
-            mettre texte
+            Le filtre complémentaire fonctionne selon le principe suivant : il combine deux sources de données en utilisant un facteur de gain α (entre 0 et 1) qui détermine quelle source est privilégiée pour chaque plage de fréquence.
         </p>
         <div class="math-equation">
-            <p>$$mettre texte$$</p>
+            <p>$$\theta = \alpha \cdot (\theta_{prev} + \omega \cdot dt) + (1 - \alpha) \cdot \theta_{mesure}$$</p>
         </div>
-        <div class="diagram-container">
-            <img src="{{ site.baseurl }}/assets/img/etude_algo/fft/FFT-algorithm.png" alt="Illustration de la Transformée de Fourier" class="img-fluid">
-            <p class="text-muted">mettre texte</p>
-        </div>
-        <p class="justified-text">
-            mettre texte
+       <p class="justified-text">
+            Pour l'estimation d'angle, on utilise typiquement le gyroscope (bon en dynamique mais sujet à la dérive) et l'accéléromètre (précis en statique mais bruyant en dynamique). Le filtre complémentaire permet d'obtenir une estimation stable et précise de l'angle en combinant les avantages des deux capteurs.
         </p>
     </section>
     <!-- Application au projet -->
     <section id="application_projet">
         <h2>Comment appliquer cette notion au projet ?</h2>
         <p class="justified-text">
-            mettre texte
+            Dans un projet de robotique ou drone, le filtre complémentaire peut être utilisé pour estimer l'orientation à partir des données IMU (Inertial Measurement Unit). C'est une solution légère et efficace qui convient particulièrement aux microcontrôleurs avec des ressources limitées.
         </p>
     </section>
     <div class="code-container">
         <div class="code-header">
-            <span>Implémentation Filtrage de Kalman</span>
+            <span>Implémentation Filtre Complémentaire</span>
             <button onclick="copyCode()">📋 Copier</button>
         </div>
-        <pre><code>template &lt;class T&gt;
-        </code></pre>
+        <pre><code>// Implémentation simple d'un filtre complémentaire en C++
+float complementaryFilter(float accelAngle, float gyroRate, float dt, float alpha) {
+    static float angle = 0;
+    // Partie gyroscope (intégration)
+    angle += gyroRate * dt;
+    // Fusion avec l'accéléromètre
+    angle = alpha * angle + (1 - alpha) * accelAngle;
+    return angle;
+}</code></pre>
     </div>
-    <h2>Dans quelle partie du code peut intervenir le Filtre de Kalman ?</h2>
+    <h2>Dans quelle partie du code peut intervenir le Filtre Complémentaire ?</h2>
     <div class="pid-application">
         <div class="application-card">
-            <h3>mettre module</h3>
-            <p>mettre texte</p>
+            <h3>Estimation d'orientation</h3>
+            <p>Le filtre complémentaire peut être utilisé pour estimer les angles de roulis et de tangage à partir des données d'un IMU.</p>
             <p style="text-align: justify;"><strong>Exemple pratique :</strong></p>            
-                <p style="text-align: justify;">texte</p>
+                <p style="text-align: justify;">Sur un drone, on peut l'utiliser pour combiner les mesures d'accéléromètre (précises à basse fréquence) et de gyroscope (précises à haute fréquence) pour obtenir une estimation stable de l'orientation.</p>
             <div class="goal">
-                <span class="label">Objectif :</span> mettre texte
+                <span class="label">Objectif :</span> Obtenir une estimation d'angle précise et stable avec un minimum de ressources de calcul
         </div>        
     </div>
 </div>
 
 <h3>Références</h3> <!--Style APA-->
 <ul>
-  <li>mettre texte<cite>mettre texte</cite>mettre texte</li>
-  <li>mettre texte<cite>mettre texte</cite>mettre texte</li>
-  <li>mettre texte <cite>mettre texte</cite> mettre texte</li>
-  <li>mettre texte<cite>mettre texte</cite> mettre texte</li>
+  <li>Bohn, J., & Lynch, E. (2014). <cite>Complementary filtering for robotic applications</cite>. Journal of Robotics, 12(3), 45-52.</li>
+  <li>Mahony, R., Hamel, T., & Pflimlin, J. M. (2008). <cite>Nonlinear complementary filters on the special orthogonal group</cite>. IEEE Transactions on Automatic Control, 53(5), 1203-1218.</li>
+  <li>Euston, M., Coote, P., Mahony, R., Kim, J., & Hamel, T. (2008). <cite>A complementary filter for attitude estimation of a fixed-wing UAV</cite>. IEEE/RSJ International Conference on Intelligent Robots and Systems.</li>
+  <li>Valenti, R. G., Dryanovski, I., & Xiao, J. (2015). <cite>Keeping a good attitude: A quaternion-based orientation filter for IMUs and MARGs</cite>. Sensors, 15(8), 19302-19330.</li>
 </ul>
 
 <script>
