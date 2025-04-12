@@ -203,7 +203,6 @@ hr {
     <div class="code-container">
         <div class="code-header">
             <span>Implémentation Filtrage de Kalman</span>
-            <button onclick="copyCode()">📋 Copier</button>
         </div>
         <pre><code>template &lt;class T&gt;
         </code></pre>
@@ -228,19 +227,3 @@ hr {
   <li>mettre texte <cite>mettre texte</cite> mettre texte</li>
   <li>mettre texte<cite>mettre texte</cite> mettre texte</li>
 </ul>
-
-<script>
-function copyCode() {
-    const code = document.querySelector('.code-container code').innerText;
-    navigator.clipboard.writeText(code);
-    
-    // Feedback visuel
-    const button = document.querySelector('.code-header button');
-    const originalText = button.innerHTML;
-    button.innerHTML = '✓ Copié!';
-
-    setTimeout(() => {
-        button.innerHTML = originalText;
-    }, 2000);
-}
-</script>

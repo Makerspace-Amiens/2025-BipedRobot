@@ -109,7 +109,7 @@ parent : Logiciel
   <tr>
     <td class="tg-fymr">Base de données & Modélisation</td>
     <td class="tg-0pky">Stockage et analyse des données de performance et des logs du robot</td>
-    <td class="tg-0pky">DataLogging, Régression, Prétraitement des données, Clustering</td>
+    <td class="tg-0pky">DataLogging, <a href="{{ site.baseurl }}/arborescence/software/module/algo/bdd/regression"> Régression</a>, Prétraitement des données, Clustering</td>
   </tr>
 </tbody>
 </table>
