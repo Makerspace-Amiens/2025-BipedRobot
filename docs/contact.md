@@ -1,6 +1,6 @@
 ---
 layout: default
-nav_order: 9
+nav_order: 8
 title: Contacts
 has_children: true
 ---
