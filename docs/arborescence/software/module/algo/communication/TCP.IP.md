@@ -525,19 +525,6 @@ hr {
 </ul>
 
 <script>
-function copyCode() {
-    const codeBlock = event.target.closest('.code-container').querySelector('code');
-    const code = codeBlock.innerText;
-    navigator.clipboard.writeText(code);
-    
-    const button = event.target.closest('button');
-    const originalText = button.innerHTML;
-    button.innerHTML = '✓ Copié!';
-
-    setTimeout(() => {
-        button.innerHTML = originalText;
-    }, 2000);
-}
 
 // Animation au scroll
 document.addEventListener('DOMContentLoaded', () => {

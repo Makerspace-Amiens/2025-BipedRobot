@@ -199,7 +199,6 @@ hr {
     <div class="code-container">
         <div class="code-header">
             <span>Implémentation Filtre Complémentaire</span>
-            <button onclick="copyCode()">📋 Copier</button>
         </div>
         <pre><code>// Implémentation simple d'un filtre complémentaire en C++
 float complementaryFilter(float accelAngle, float gyroRate, float dt, float alpha) {
@@ -231,19 +230,3 @@ float complementaryFilter(float accelAngle, float gyroRate, float dt, float alph
   <li>Euston, M., Coote, P., Mahony, R., Kim, J., & Hamel, T. (2008). <cite>A complementary filter for attitude estimation of a fixed-wing UAV</cite>. IEEE/RSJ International Conference on Intelligent Robots and Systems.</li>
   <li>Valenti, R. G., Dryanovski, I., & Xiao, J. (2015). <cite>Keeping a good attitude: A quaternion-based orientation filter for IMUs and MARGs</cite>. Sensors, 15(8), 19302-19330.</li>
 </ul>
-
-<script>
-function copyCode() {
-    const code = document.querySelector('.code-container code').innerText;
-    navigator.clipboard.writeText(code);
-    
-    // Feedback visuel
-    const button = document.querySelector('.code-header button');
-    const originalText = button.innerHTML;
-    button.innerHTML = '✓ Copié!';
-
-    setTimeout(() => {
-        button.innerHTML = originalText;
-    }, 2000);
-}
-</script>

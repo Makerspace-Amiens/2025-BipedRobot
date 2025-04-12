@@ -113,18 +113,6 @@ title: Filtrage de Kalman
     font-family: sans-serif;
 }
 
-.code-header button {
-    background: none;
-    border: none;
-    color: inherit;
-    cursor: pointer;
-    font-size: 1rem;
-}
-
-.code-header button:hover {
-    color: white;
-}
-
 pre {
     margin: 0;
     white-space: pre-wrap;
@@ -210,7 +198,6 @@ hr {
     <div class="code-container">
         <div class="code-header">
             <span>Implémentation Filtrage de Kalman</span>
-            <button onclick="copyCode()">📋 Copier</button>
         </div>
         <pre><code>
 /**
@@ -325,19 +312,3 @@ void KalmanFilter::update(const Eigen::VectorXd& y, double dt, const Eigen::Matr
   <li>Martirosyan, H. (2014). <cite>Kalman Filter C++ Implementation</cite>. GitHub repository.</li>
   <li>NASA. (1969). <cite>Apollo Guidance Computer and Kalman Filter</cite>. Technical Reports.</li>
 </ul>
-
-<script>
-function copyCode() {
-    const code = document.querySelector('.code-container code').innerText;
-    navigator.clipboard.writeText(code);
-    
-    // Feedback visuel
-    const button = document.querySelector('.code-header button');
-    const originalText = button.innerHTML;
-    button.innerHTML = '✓ Copié!';
-
-    setTimeout(() => {
-        button.innerHTML = originalText;
-    }, 2000);
-}
-</script>

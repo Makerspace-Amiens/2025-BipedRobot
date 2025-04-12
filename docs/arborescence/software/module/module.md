@@ -54,12 +54,12 @@ parent : Logiciel
   <tr>
     <td class="tg-dvid">Acquisition de données</td>
     <td class="tg-y698">Collecte des données des capteurs</td>
-    <td class="tg-y698"><a href="{{ site.baseurl }}/arborescence/software/module/algo/kalman">Filtre de Kalman</a>, Filtre de complémentarité,<a href="{{ site.baseurl }}/arborescence/software/module/algo/FFT">FFT</a></td>
+    <td class="tg-y698"><a href="{{ site.baseurl }}/arborescence/software/module/algo/kalman">Filtre de Kalman</a>, <a href="{{ site.baseurl }}/arborescence/software/module/algo/filtre_complementarite">Filtre de Complémentarié</a>, <a href="{{ site.baseurl }}/arborescence/software/module/algo/FFT">FFT</a></td>
   </tr>
   <tr>
     <td class="tg-fymr">Planification de trajectoires</td>
     <td class="tg-0pky">Détermination du chemin à suivre, gestion des obstacles, calcul des trajectoires</td>
-    <td class="tg-0pky">A*, Djikstra, RRT</td>
+    <td class="tg-0pky"><a href="{{ site.baseurl }}/arborescence/software/module/algo/trajectoire/algo_A_etoile"> A*</a>, Djikstra, RRT</td>
   </tr>
   <tr>
     <td class="tg-dvid">Algorithme de Marche</td>

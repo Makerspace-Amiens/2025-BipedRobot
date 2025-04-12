@@ -211,7 +211,6 @@ hr {
     <div class="code-container">
         <div class="code-header">
             <span>Implémentation basique du ZMP</span>
-            <button onclick="copyCode()">📋 Copier</button>
         </div>
         <pre><code>class ZMPCalculator:
     def __init__(self, robot_mass, gravity=9.81):
@@ -258,19 +257,3 @@ hr {
   <li>Sardain, P., & Bessonnet, G. (2004). <cite>Forces acting on a biped robot. Center of pressure—Zero moment point</cite>. IEEE Transactions on Systems, Man, and Cybernetics, 34(5), 630-637.</li>
   <li>Boston Dynamics. <cite>Atlas Control System Whitepaper</cite> (ZMP-based stabilization).</li>
 </ul>
-
-<script>
-function copyCode() {
-    const code = document.querySelector('.code-container code').innerText;
-    navigator.clipboard.writeText(code);
-    
-    // Feedback visuel
-    const button = document.querySelector('.code-header button');
-    const originalText = button.innerHTML;
-    button.innerHTML = '✓ Copié!';
-
-    setTimeout(() => {
-        button.innerHTML = originalText;
-    }, 2000);
-}
-</script>

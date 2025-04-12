@@ -203,7 +203,6 @@ hr {
     <div class="code-container">
         <div class="code-header">
             <span>Implémentation Transformée de Fourier</span>
-            <button onclick="copyCode()">📋 Copier</button>
         </div>
         <pre><code>template &lt;class T&gt;
 #include &lt;Eigen/Dense&gt;
@@ -321,19 +320,3 @@ Eigen::VectorXcd FFT(Eigen::VectorXd& x_n)
   <li>Abdullah, E. E. (2020). <cite>FFT Implementation in C++</cite>. GitHub repository.</li>
   <li>Smith, S. W. (1997). <cite>The Scientist and Engineer's Guide to Digital Signal Processing</cite>. California Technical Publishing.</li>
 </ul>
-
-<script>
-function copyCode() {
-    const code = document.querySelector('.code-container code').innerText;
-    navigator.clipboard.writeText(code);
-    
-    // Feedback visuel
-    const button = document.querySelector('.code-header button');
-    const originalText = button.innerHTML;
-    button.innerHTML = '✓ Copié!';
-
-    setTimeout(() => {
-        button.innerHTML = originalText;
-    }, 2000);
-}
-</script>

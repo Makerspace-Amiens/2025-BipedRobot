@@ -205,7 +205,6 @@ hr {
     <div class="code-container">
         <div class="code-header">
             <span>Implémentation basique d'un LQR en Python</span>
-            <button onclick="copyCode()">📋 Copier</button>
         </div>
         <pre><code>import numpy as np
 from scipy.linalg import solve_continuous_are
@@ -258,20 +257,3 @@ print("Matrice de gain LQR:", K)
   <li>Stanford University. <cite>Linear Quadratic Regulator (LQR)</cite> - Cours de robotique.</li>
   <li>Matlab Documentation. <cite>lqr function reference</cite>.</li>
 </ul>
-
-
-<script>
-function copyCode() {
-    const code = document.querySelector('.code-container code').innerText;
-    navigator.clipboard.writeText(code);
-    
-    // Feedback visuel
-    const button = document.querySelector('.code-header button');
-    const originalText = button.innerHTML;
-    button.innerHTML = '✓ Copié!';
-
-    setTimeout(() => {
-        button.innerHTML = originalText;
-    }, 2000);
-}
-</script>

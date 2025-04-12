@@ -207,7 +207,6 @@ hr {
         <div class="code-container">
             <div class="code-header">
                 <span>PID.cpp</span>
-                <button onclick="copyCode()" style="background:none;border:none;color:inherit;cursor:pointer;">📋 Copier</button>
             </div>
             <pre><code>#include &lt;iostream&gt;
 #include &lt;chrono&gt;
@@ -295,23 +294,6 @@ public:
         </div>
     </div>
 </div>
-
-
-<script>
-function copyCode() {
-    const code = document.querySelector('.code-container code').innerText;
-    navigator.clipboard.writeText(code);
-    
-    // Feedback visuel
-    const button = document.querySelector('.code-header button');
-    const originalText = button.innerHTML;
-    button.innerHTML = '✓ Copié!';
-
-    setTimeout(() => {
-        button.innerHTML = originalText;
-    }, 2000);
-}
-</script>
 
 <h3>Références</h3>
 <ul>
