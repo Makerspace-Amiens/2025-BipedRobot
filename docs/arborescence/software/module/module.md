@@ -200,8 +200,8 @@ hr {
         <div class="module-algorithms">
             <a href="{{ site.baseurl }}/arborescence/software/module/algo/pilote_moteur/pid" class="algorithm-link">PID</a>
             <a href="{{ site.baseurl }}/arborescence/software/module/algo/regulateur" class="algorithm-link">LQR</a>
-            <a href="{{ site.baseurl }}/arborescence/software/module/algo/stabilisation/kalman" class="algorithm-link">Kalman</a>
-            <a href="#" class="algorithm-link">MPC</a>
+            <a href="{{ site.baseurl }}/arborescence/software/module/algo/acquisition_donnée/kalman" class="algorithm-link">Kalman</a>
+            <a href="{{ site.baseurl }}/arborescence/software/module/algo/mpc" class="algorithm-link">MPC</a>
         </div>
     </td>
   </tr>
@@ -280,7 +280,7 @@ hr {
     <td class="tg-y698">
         <div class="module-algorithms">
             <a href="#" class="algorithm-link">ANOVA</a>
-            <a href="{{ site.baseurl }}/arborescence/software/module/algo/stabilisation/kalman" class="algorithm-link">Kalman</a>
+            <a href="{{ site.baseurl }}/arborescence/software/module/algo/acquisition_donnée/kalman" class="algorithm-link">Kalman</a>
             <a href="#" class="algorithm-link">LSTM Anomaly</a>
         </div>
     </td>
