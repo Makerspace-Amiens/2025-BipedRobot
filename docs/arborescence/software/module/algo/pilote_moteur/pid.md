@@ -17,6 +17,8 @@ title: Contrôleur PID - Explications
     --accent-color: rgb(28, 80, 131);;
 }
 
+
+
 .pid-container {
     max-width: 1200px;
     margin: 0 auto;
@@ -160,6 +162,7 @@ hr {
     <!-- Introduction -->
     <section id="introduction">
         <h2>Qu'est-ce qu'un Contrôleur PID ?</h2>
+        <hr>
         <p class="lead justified-text">
             Un contrôleur PID (Proportionnel, Intégral, Dérivé) est utilisé pour ajuster dynamiquement un système afin de minimiser une erreur entre une valeur mesurée et une consigne désirée.
         </p>
@@ -200,10 +203,6 @@ hr {
     <section id="application_projet">
         <h2>Comment appliquer cette notion au projet ?</h2>
         <p style="text-align: justify;"> Nous nous appuierons principalement sur les travaux de <a href="https://github.com/nicholastmosher/PID" target="_blank">Nick Mosher</a>, qui propose une approche détaillée pour l'implémentation du contrôleur PID dans un environnement de programmation. Nous examinerons comment adapter ses principes à notre robot bipède et comment optimiser son utilisation afin d'assurer une régulation précise et efficace des mouvements et de la stabilisation. </p>
-        <h4><strong>Initialisation</strong></h4>
-        <div class="justified-text">
-        L'implémentation du PID en C++ commence par la création d'une classe représentant le contrôleur. Comme mentionné précédemment, nous avons une classe PID qui prend en charge les trois paramètres essentiels : Kp, Ki, et Kd. Ces coefficients seront ajustés en fonction des tests et des besoins de régulation.<br><br>
-        Voici une version étendue de l'implémentation C++ pour mieux comprendre les processus internes et l'application du PID :</div>
         <div class="code-container">
             <div class="code-header">
                 <span>PID.cpp</span>
