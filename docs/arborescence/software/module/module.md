@@ -222,7 +222,7 @@ hr {
     <td class="tg-0pky">
         <div class="module-algorithms">
             <a href="{{ site.baseurl }}/arborescence/software/module/algo/trajectoire/algo_A_etoile" class="algorithm-link">A*</a>
-            <a href="#" class="algorithm-link">RRT</a>
+            <a href="{{ site.baseurl }}/arborescence/software/module/algo/trajectoire/rrt" class="algorithm-link">RRT</a>
             <a href="#" class="algorithm-link">Djikstra</a>
         </div>
     </td>
