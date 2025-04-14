@@ -218,7 +218,7 @@ hr {
   </tr>
   <tr>
     <td class="tg-fymr">Planification de Trajectoire</td>
-    <td class="tg-0pky">Génération de trajectoires lisses avec contraintes cinématiques. Gestion dynamique des obstacles via SLAM.</td>
+    <td class="tg-0pky">Génération de trajectoires lisses avec contraintes cinématiques.</td>
     <td class="tg-0pky">
         <div class="module-algorithms">
             <a href="{{ site.baseurl }}/arborescence/software/module/algo/trajectoire/algo_A_etoile" class="algorithm-link">A*</a>
@@ -247,7 +247,7 @@ hr {
             <a href="{{ site.baseurl }}/arborescence/software/module/algo/communication/TCP.IP" class="algorithm-link">TCP/IP</a>
             <a href="#" class="algorithm-link">ROS 2</a>
             <a href="#" class="algorithm-link">DDS</a>
-            <a href="#" class="algorithm-link">Protobuf</a>
+            <a href="{{ site.baseurl }}/arborescence/software/module/algo/communication/Protobuf" Class="algorithm-link">Protobuf</a>
         </div>
     </td>
   </tr>
