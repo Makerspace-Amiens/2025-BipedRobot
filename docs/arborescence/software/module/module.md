@@ -234,7 +234,7 @@ hr {
         <div class="module-algorithms">
             <a href="{{ site.baseurl }}/arborescence/software/module/algo/marche/zmp" class="algorithm-link">ZMP</a>
             <a href="#" class="algorithm-link">CPG</a>
-            <a href="#" class="algorithm-link">Inverse Kinematics</a>
+            <a href="{{ site.baseurl }}/arborescence/software/module/algo/marche/inverse_kinematics" class="algorithm-link">Inverse Kinematics</a>
             <a href="#" class="algorithm-link">Jacobien</a>
         </div>
     </td>
@@ -246,7 +246,6 @@ hr {
         <div class="module-algorithms">
             <a href="{{ site.baseurl }}/arborescence/software/module/algo/communication/TCP.IP" class="algorithm-link">TCP/IP</a>
             <a href="{{ site.baseurl }}/arborescence/software/module/algo/communication/ROS2" class="algorithm-link">ROS 2</a>
-            <a href="#" class="algorithm-link">DDS</a>
             <a href="{{ site.baseurl }}/arborescence/software/module/algo/communication/Protobuf" Class="algorithm-link">Protobuf</a>
         </div>
     </td>
