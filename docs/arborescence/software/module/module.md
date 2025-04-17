@@ -233,7 +233,7 @@ hr {
     <td class="tg-y698">
         <div class="module-algorithms">
             <a href="{{ site.baseurl }}/arborescence/software/module/algo/marche/zmp" class="algorithm-link">ZMP</a>
-            <a href="#" class="algorithm-link">CPG</a>
+            <a href="{{ site.baseurl }}/arborescence/software/module/algo/marche/cpg" class="algorithm-link">CPG</a>
             <a href="{{ site.baseurl }}/arborescence/software/module/algo/marche/inverse_kinematics" class="algorithm-link">Inverse Kinematics</a>
             <a href="{{ site.baseurl }}/arborescence/software/module/algo/marche/jacobien" class="algorithm-link">Jacobien</a>
         </div>
@@ -343,4 +343,3 @@ hr {
 </tbody>
 </table>
 </div>
-
