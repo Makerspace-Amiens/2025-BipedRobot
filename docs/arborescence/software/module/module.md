@@ -188,7 +188,7 @@ hr {
     <td class="tg-y698">
         <div class="module-algorithms">
             <a href="{{ site.baseurl }}/arborescence/software/module/algo/pilote_moteur/pid" class="algorithm-link">PID</a>
-            <a href="#" class="algorithm-link">Feedforward</a>
+            <a href="{{ site.baseurl }}/arborescence/software/module/algo/pilote_moteur/feedforward" class="algorithm-link">Feedforward</a>
             <a href="#" class="algorithm-link">Trapèze Vitesse</a>
         </div>
     </td>
