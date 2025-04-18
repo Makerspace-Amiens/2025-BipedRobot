@@ -169,8 +169,15 @@ hr {
 
 </style>
 
-<p style="text-align: justify;">Notre robot bipède intègre une architecture modulaire sophistiquée où chaque composant remplit une fonction critique. Des moteurs à l'IA embarquée, ces modules interagissent en temps réel via des algorithmes optimisés pour assurer stabilité dynamique et locomotion adaptative. Cette architecture permet une maintenance simplifiée, des mises à jour incrémentales et une spécialisation des développements.</p>
+<div style="text-align: justify;">
+    <p>Notre robot bipède intègre une architecture modulaire où chaque composant remplit une fonction critique. Des moteurs à l'IA embarquée, ces modules interagissent en temps réel via des algorithmes optimisés pour assurer stabilité dynamique et locomotion adaptative. Cette architecture permet une maintenance simplifiée, des mises à jour incrémentales et une spécialisation des développements.</p>
+</div>
+
 <h2 class="center-text">Tableau des Modules et Algorithmes Associés</h2>
+
+<div style="text-align:center; background-color:rgba(171, 213, 255, 0.45); color:rgb(0, 0, 0); padding:10px;">
+  Ce tableau a été conçu dans le but de présenter de manière structurée les travaux de recherche réalisés en vue de la réussite du projet.
+</div>
 
 <div class="table-container">
 <table class="tg">
@@ -189,7 +196,7 @@ hr {
         <div class="module-algorithms">
             <a href="{{ site.baseurl }}/arborescence/software/module/algo/pilote_moteur/pid" class="algorithm-link">PID</a>
             <a href="{{ site.baseurl }}/arborescence/software/module/algo/pilote_moteur/feedforward" class="algorithm-link">Feedforward</a>
-            <a href="#" class="algorithm-link">Trapèze Vitesse</a>
+            <a href="{{ site.baseurl }}/arborescence/software/module/algo/pilote_moteur/trapeze_vitesse" class="algorithm-link">Trapèze Vitesse</a>
         </div>
     </td>
   </tr>
