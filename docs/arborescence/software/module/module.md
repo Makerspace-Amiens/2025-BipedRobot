@@ -11,12 +11,23 @@ parent: Logiciel
 
 <style>
 :root {
-    --primary-color: rgb(28, 80, 131);
-    --secondary-color: rgb(20, 60, 100);
+    --primary-color: #1c5083;
+    --secondary-color: #143c64;
     --accent-color: rgba(28, 80, 131, 0.1);
     --text-color: #333;
+    --light-bg: #f8f9fa;
+    --border-color: #ddd;
 }
 
+/* Typographie améliorée */
+.content-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+/* Séparateur moderne */
 hr {
     border: none;
     height: 2px;
@@ -24,160 +35,118 @@ hr {
     margin: 1.5rem 0;
 }
 
+/* Encart d'introduction */
+.intro-box {
+    background-color: var(--light-bg);
+    text-align:justify;
+    padding: 1.25rem;
+    margin: 1.5rem 0;
+    border-radius: 0 4px 4px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+/* Style des algorithmes */
 .module-algorithms {
-    margin-top: 0.5rem;
-    font-size: 0.9rem;
+    margin-top: 0.75rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
 }
 
 .algorithm-link {
     display: inline-block;
     background-color: var(--accent-color);
     color: var(--primary-color);
-    padding: 0.2rem 0.4rem; 
-    margin: 0.2rem 0.1rem;
+    padding: 0.3rem 0.6rem;
     border-radius: 4px;
     text-decoration: none;
     transition: all 0.2s ease;
-    border: 1px solid rgba(28, 80, 131, 0.3);
-    font-size: 0.75rem; 
+    border: 1px solid rgba(28, 80, 131, 0.2);
+    font-size: 0.8rem;
+    font-weight: 500;
 }
 
 .algorithm-link:hover {
     background-color: var(--primary-color);
     color: white;
     transform: translateY(-1px);
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
+/* Tableau amélioré */
 .table-container {
     overflow-x: auto;
-    margin: 1.5rem 0;
+    margin: 2rem 0;
+    border-radius: 6px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
 }
 
 .tg {
     border-collapse: collapse;
     border-spacing: 0;
     width: 100%;
-    max-width: 100%;
     margin: 0 auto;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
 }
 
 .tg td {
-    border: 1px solid #ddd;
-    font-family: Arial, sans-serif;
-    font-size: 14px;
-    overflow: hidden;
-    padding: 10px 12px;
-    word-break: normal;
+    border: 1px solid var(--border-color);
+    padding: 12px 15px;
+    font-size: 0.9rem;
+    line-height: 1.5;
 }
 
 .tg th {
-    border: 1px solid #ddd;
-    font-family: Verdana, Geneva, sans-serif;
-    font-size: 14px;
-    font-weight: bold;
-    overflow: hidden;
-    padding: 12px 15px;
-    word-break: normal;
-}
-
-.tg .tg-dvid {
-    background-color: #f8f9fa;
-    font-weight: bold;
-    vertical-align: top;
-}
-
-.tg .tg-rahz {
+    border: 1px solid var(--border-color);
     background-color: var(--primary-color);
     color: white;
+    padding: 14px 15px;
+    font-weight: 600;
+    text-align: left;
+}
+
+.tg tr:nth-child(even) {
+    background-color: var(--light-bg);
+}
+
+.tg tr:hover {
+    background-color: rgba(28, 80, 131, 0.05);
+}
+
+/* Section centrée */
+.section-header {
     text-align: center;
-    vertical-align: middle;
-}
-
-.tg .tg-y698 {
-    background-color: #f8f9fa;
-    vertical-align: top;
-}
-
-.tg .tg-fymr {
-    font-weight: bold;
-    vertical-align: top;
-}
-
-.tg .tg-0pky {
-    vertical-align: top;
-}
-
-#zoom-image {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 1.5rem auto;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
-}
-
-#zoom-image:hover {
-    transform: scale(1.02);
-}
-
-.center-text {
-    text-align: center;
-    margin: 1.5rem 0;
-    color: var(--primary-color);
-    font-weight: bold;
-}
-
-.diagram-container {
-    background-color: #f8f9fa;
-    padding: 1.5rem;
-    border-radius: 8px;
     margin: 2rem 0;
-    border: 1px solid #ddd;
-}
-
-.diagram-title {
-    text-align: center;
+    position: relative;
     color: var(--primary-color);
-    margin-bottom: 1rem;
-    font-weight: bold;
 }
 
-.legend {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem;
-    margin-top: 1rem;
+.section-header:after {
+    content: "";
+    display: block;
+    width: 120px;
+    height: 3px;
+    background: var(--primary-color);
+    margin: 1rem auto 0;
 }
 
-.legend-item {
-    display: flex;
-    align-items: center;
-    font-size: 0.8rem;
+/* Responsive */
+@media (max-width: 768px) {
+    .tg td, .tg th {
+        padding: 8px 10px;
+        font-size: 0.85rem;
+    }
 }
-
-.legend-color {
-    width: 16px;
-    height: 16px;
-    margin-right: 8px;
-    border-radius: 3px;
-}
-
 </style>
 
-<div style="text-align: justify;">
+<div class="content-wrapper">
+
+<div class="intro-box">
     <p>Notre robot bipède intègre une architecture modulaire où chaque composant remplit une fonction critique. Des moteurs à l'IA embarquée, ces modules interagissent en temps réel via des algorithmes optimisés pour assurer stabilité dynamique et locomotion adaptative. Cette architecture permet une maintenance simplifiée, des mises à jour incrémentales et une spécialisation des développements.</p>
 </div>
 
-<h2 class="center-text">Tableau des Modules et Algorithmes Associés</h2>
+<h2 class="section-header">Tableau des Modules et Algorithmes Associés</h2>
 
-<div style="text-align:center; background-color:rgba(171, 213, 255, 0.45); color:rgb(0, 0, 0); padding:10px;">
-  Ce tableau a été conçu dans le but de présenter de manière structurée les travaux de recherche réalisés en vue de la réussite du projet.
-</div>
+<p style="text-align:center; font-size:14px; margin-top:12px;">Ce tableau présente de manière structurée les travaux de recherche réalisés pour la conception du système.</p>
 
 <div class="table-container">
 <table class="tg">
@@ -340,9 +309,9 @@ hr {
     <td class="tg-0pky">Stockage structuré avec compression et analyse prédictive des tendances de performance.</td>
     <td class="tg-0pky">
         <div class="module-algorithms">
-            <a href="#" class="algorithm-link">TSDB</a>
+            <a href="{{ site.baseurl }}/arborescence/software/module/algo/bdd/tsdb" class="algorithm-link">TSDB</a>
             <a href="{{ site.baseurl }}/arborescence/software/module/algo/bdd/regression" class="algorithm-link">Régression</a>
-            <a href="#" class="algorithm-link">K-means</a>
+            <a href="{{ site.baseurl }}/arborescence/software/module/algo/bdd/k_means" class="algorithm-link">K-means</a>
             <a href="{{ site.baseurl }}/arborescence/software/module/algo/bdd/pca" class="algorithm-link">PCA</a>
         </div>
     </td>
