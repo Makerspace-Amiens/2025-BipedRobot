@@ -273,7 +273,7 @@ hr {
     <td class="tg-0pky">Décision contextuelle avec apprentissage continu. Intègre perception visuelle et stratégie de locomotion adaptative.</td>
     <td class="tg-0pky">
         <div class="module-algorithms">
-            <a href="#" class="algorithm-link">RL (PPO)</a>
+            <a href="{{site.baseurl}}/arborescence/software/module/algo/ia/rl" class="algorithm-link">RL</a>
             <a href="#" class="algorithm-link">CNN</a>
             <a href="#" class="algorithm-link">GNN</a>
             <a href="#" class="algorithm-link">Bayesian Nets</a>
@@ -343,7 +343,7 @@ hr {
             <a href="#" class="algorithm-link">TSDB</a>
             <a href="{{ site.baseurl }}/arborescence/software/module/algo/bdd/regression" class="algorithm-link">Régression</a>
             <a href="#" class="algorithm-link">K-means</a>
-            <a href="#" class="algorithm-link">PCA</a>
+            <a href="{{ site.baseurl }}/arborescence/software/module/algo/bdd/pca" class="algorithm-link">PCA</a>
         </div>
     </td>
   </tr>
