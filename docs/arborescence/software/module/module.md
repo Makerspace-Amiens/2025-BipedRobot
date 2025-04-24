@@ -276,7 +276,7 @@ hr {
     <td class="tg-y698">Ajustement en ligne des paramètres de contrôle selon le terrain, charge et état mécanique.</td>
     <td class="tg-y698">
         <div class="module-algorithms">
-            <a href="#" class="algorithm-link">Fuzzy Logic</a>
+            <a href="{{ site.baseurl }}/arborescence/software/module/algo/adapt_dynamique/fuzzylogic" class="algorithm-link">Fuzzy Logic</a>
             <a href="#" class="algorithm-link">RL Adaptatif</a>
             <a href="#" class="algorithm-link">Gradient Stochastique</a>
         </div>
