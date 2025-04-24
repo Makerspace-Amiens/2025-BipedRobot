@@ -254,7 +254,7 @@ hr {
     <td class="tg-y698">Surveillance multi-critères avec seuils adaptatifs. Génération d'alertes et modes dégradés.</td>
     <td class="tg-y698">
         <div class="module-algorithms">
-            <a href="#" class="algorithm-link">ANOVA</a>
+            <a href="{{ site.baseurl }}/arborescence/software/module/algo/diag_tps_reel/anova" class="algorithm-link">ANOVA</a>
             <a href="{{ site.baseurl }}/arborescence/software/module/algo/acquisition_donnée/kalman" class="algorithm-link">Kalman</a>
             <a href="#" class="algorithm-link">LSTM Anomaly</a>
         </div>
