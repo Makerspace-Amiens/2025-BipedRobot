@@ -119,29 +119,29 @@ std::tuple<double, double, double> RobotBipede::getJointAngles(const std::string
 
 std::tuple<double, double, double, double, double, double, double, double, double, double>
 RobotBipede::getJointPositions(double time,const std::string& leg) {
-        double offset_x = (leg == "left") ? step_length : 0.0;
-        double sign = (leg == "left") ? 1.0 : -1.0;
+    double offset_x = (leg == "left") ? step_length : 0.0;
+    double sign = (leg == "left") ? 1.0 : -1.0;
     
-        auto [phase_name, phase_progress] = getGaitPhaseProgress(time, leg);
-        auto [thigh_angle, shank_angle, foot_angle] = getJointAngles(phase_name, phase_progress, leg);
+    auto [phase_name, phase_progress] = getGaitPhaseProgress(time, leg);
+    auto [thigh_angle, shank_angle, foot_angle] = getJointAngles(phase_name, phase_progress, leg);
     
-        // Kinematics (simplified - assumes a planar robot)
-        double hip_x = global_x_position + offset_x;
-        double hip_y = ground_level + h_hip;
+    // Kinematics (simplified - assumes a planar robot)
+    double hip_x = global_x_position + offset_x;
+    double hip_y = ground_level + h_hip;
     
-        double knee_x = hip_x + l_thigh * std::sin(thigh_angle);
-        double knee_y = hip_y - l_thigh * std::cos(thigh_angle);
+    double knee_x = hip_x + l_thigh * std::sin(thigh_angle);
+    double knee_y = hip_y - l_thigh * std::cos(thigh_angle);
     
-        double ankle_x = knee_x + l_shank * std::sin(thigh_angle + shank_angle);
-        double ankle_y = knee_y - l_shank * std::cos(thigh_angle + shank_angle);
+    double ankle_x = knee_x + l_shank * std::sin(thigh_angle + shank_angle);
+    double ankle_y = knee_y - l_shank * std::cos(thigh_angle + shank_angle);
     
-        double foot_tip_x = ankle_x + l_foot * std::sin(thigh_angle + shank_angle + foot_angle);
-        double foot_tip_y = ankle_y - l_foot * std::cos(thigh_angle + shank_angle + foot_angle);
+    double foot_tip_x = ankle_x + l_foot * std::sin(thigh_angle + shank_angle + foot_angle);
+    double foot_tip_y = ankle_y - l_foot * std::cos(thigh_angle + shank_angle + foot_angle);
     
-        double foot_start_x = ankle_x;
-        double foot_start_y = ankle_y;
-        double foot_end_x = foot_tip_x;
-        double foot_end_y = foot_tip_y;
+    double foot_start_x = ankle_x;
+    double foot_start_y = ankle_y;
+    double foot_end_x = foot_tip_x;
+    double foot_end_y = foot_tip_y;
     
-        return std::make_tuple(hip_x, hip_y, knee_x, knee_y, ankle_x, ankle_y, foot_start_x, foot_start_y, foot_end_x, foot_end_y);
+    return std::make_tuple(hip_x, hip_y, knee_x, knee_y, ankle_x, ankle_y, foot_start_x, foot_start_y, foot_end_x, foot_end_y);
     }
