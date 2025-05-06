@@ -158,7 +158,7 @@ ax.set_xlim(-1, 2)
 ax.set_ylim(-0.1, 1.3)
 ax.set_aspect('equal')
 ax.grid(True, linestyle=':', alpha=0.7)
-ax.set_title('Modélisation améliorée de la marche humaine', fontsize=14)
+ax.set_title('Modélisation de la marche humaine', fontsize=14)
 ax.set_xlabel('Position horizontale (m)', fontsize=12)
 ax.set_ylabel('Position verticale (m)', fontsize=12)
 
