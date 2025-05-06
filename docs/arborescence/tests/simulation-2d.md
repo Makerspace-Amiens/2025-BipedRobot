@@ -49,7 +49,7 @@ hr {
 
 <div class="card">
 <div style="text-align:justify">
-<strong>But:</strong> Visualiser la cinématique de marche du robot via une modélisation simplifiée pour tester les stratégies de marche.
+<strong>But:</strong> Visualiser la cinématique de marche du robot via une modélisation simplifiée pour tester les stratégies de marche et mieux appréhender les concepts liés à la locomotion robotique humanoïde.
 </div>
 </div>
 
@@ -61,7 +61,11 @@ Le robot est conçu pour reproduire la dynamique de la marche humaine à travers
 
 ### Cycle de Marche
 
+<!--Rajout img du cycle de marche-->
+
 ### Contraintes Physiques
+
+<!--Tableau : contraintes angles, centre de masse, -->
 
 ## <span class="section-title">Stratégies Utilisées</span>
 

@@ -19,8 +19,8 @@ class BipedRobot:
         self.gait_cycle = self.step_length * 2
         self.foot_clearance = 0.12
         self.pelvic_tilt_amplitude = 0.06
-        self.pelvic_rotation_amplitude = 0.08
-        self.pelvic_sway_amplitude = 0.04
+        self.pelvic_rotation_amplitude = 0.03
+        self.pelvic_sway_amplitude = 0.01
         self.horizontal_speed = self.step_length * self.step_frequency
         self.contact_x_right = None
         self.contact_x_left = None
@@ -83,9 +83,9 @@ class BipedRobot:
         # --- Mouvement 3D du bassin (simplifié en 2D pour l'instant) ---
         pelvic_tilt = self.pelvic_tilt_amplitude * np.sin(2 * np.pi * self.step_frequency * time)
         pelvic_rotation = self.pelvic_rotation_amplitude * np.sin(2 * np.pi * self.step_frequency * time)
-        pelvic_sway = self.pelvic_sway_amplitude * np.sin(2 * np.pi * self.step_frequency * time + np.pi/2)
+        pelvic_sway = 0.3 * self.pelvic_sway_amplitude * np.sin(2 * np.pi * self.step_frequency * time + np.pi/2) # Réduction du pelvic sway
 
-        hip_x_local = (0.5 if leg == 'right' else -0.5) * pelvic_sway + 0.3 * pelvic_rotation
+        hip_x_local = (0.5 if leg == 'right' else -0.4) * pelvic_sway + 0.3 * pelvic_rotation # Ajustement pour la hanche gauche
         hip_y = self.h_hip - pelvic_tilt + 0.1 * pelvic_sway**2
 
         knee_x_local = hip_x_local + self.l_thigh * np.sin(thigh_angle)
@@ -150,6 +150,7 @@ class BipedRobot:
             knee_y += vertical_offset * 0.3
 
         return hip_x_local, hip_y, knee_x_local, knee_y, ankle_x_local, ankle_y, foot_start_x_local, foot_start_y, foot_end_x_local, foot_end_y
+        
 
 # --- Initialisation de la figure et de l'axe ---
 fig, ax = plt.subplots(figsize=(14, 7))
