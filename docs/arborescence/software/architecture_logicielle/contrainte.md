@@ -2,7 +2,6 @@
 layout: default
 nav_exclude: true
 title: Contrainte et Sécurité
-parent: Architecture Logicielle
 ---
 
 <style>
