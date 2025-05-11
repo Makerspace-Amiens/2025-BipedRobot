@@ -30,7 +30,7 @@ Cliquez sur une carte pour accéder à la fiche technique du composant.
   </div>
     <!-- Carte 2 -->
   <div class="electronic-card">
-    <h3>Microcontrôleur</h3>
+    <h3>Seeeduino XIAO nRF52840</h3>
     <p><strong>Rôle :</strong> Le cerveau du robot<br>
     • Reçoit et traite les informations<br>
     • Prend les décisions<br>
