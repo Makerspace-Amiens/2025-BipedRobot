@@ -278,7 +278,7 @@ hr {
         <div class="module-algorithms">
             <a href="{{ site.baseurl }}/arborescence/software/module/algo/adapt_dynamique/fuzzylogic" class="algorithm-link">Fuzzy Logic</a>
             <a href="#" class="algorithm-link">RL Adaptatif</a>
-            <a href="#" class="algorithm-link">Gradient Stochastique</a>
+            <a href="{{ site.baseurl }}/arborescence/software/module/algo/adapt_dynamique/gradient" class="algorithm-link"> Gradient Stochastique </a>
         </div>
     </td>
   </tr>

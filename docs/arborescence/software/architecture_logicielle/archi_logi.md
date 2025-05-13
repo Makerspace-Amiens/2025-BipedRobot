@@ -30,6 +30,9 @@ hr {
 
 <hr>
 
+<div style="font-size: 1.25rem; font-weight: 300; text-align:justify">
+    Cette section expose l'architecture logicielle mise en place pour répondre aux exigences et aux contraintes de notre projet.
 </div>
 
+## Logigramme
 
