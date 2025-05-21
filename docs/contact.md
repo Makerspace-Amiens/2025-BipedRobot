@@ -13,7 +13,7 @@ has_children: true
 
 <div class="team-container">
   <div class="team-member">
-    <img src="{{ site.baseurl }}/assets/img/collaborateur/houda.png" alt="Houda Hourie">
+    <img src="{{ site.baseurl }}/assets/img/collaborateur/houda.jpg" alt="Houda Hourie">
     <p><a href="javascript:void(0);" onclick="openModal('modal-houda')">Houda Hourie</a></p>
   </div>
 
