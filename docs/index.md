@@ -66,7 +66,7 @@ title: Accueil
       <div class="media-card animated-entry highlight-box" style="background: white; padding: 25px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); animation-delay: 0.8s;">
         <h3 style="margin-top: 0; margin-bottom:15px;">Poster Scientifique</h3>
         <div class="poster-preview" onclick="openModal()" style="background: #f5f5f5; height: 180px; display: flex; align-items: center; justify-content: center; border-radius: 8px; overflow: hidden; cursor: pointer;">
-          <img id="poster-img" src="{{ site.baseurl }}/assets/img/poster.jpg" alt="Poster scientifique du projet" 
+          <img id="poster-img" src="{{ site.baseurl }}/assets/img/Poster_Robot_Bipede.jpg" alt="Poster scientifique du projet" 
                style="max-width: 100%; max-height: 100%; transition: transform 0.5s ease;">
         </div>
         <p style="text-align: center; margin-top: 10px; font-size: 0.9em;">
@@ -95,13 +95,10 @@ title: Accueil
   </div>
 </div>
 
-<!-- Modale pour agrandir le poster -->
 <div id="posterModal" class="modal" onclick="closeModal()">
   <span class="close" onclick="closeModal()">&times;</span>
-  <img class="modal-content" id="modalImage" src="{{ site.baseurl }}/assets/img/poster.jpg" alt="Poster scientifique en grand">
+  <img class="modal-content" id="modalImage" src="{{ site.baseurl }}/assets/img/Poster_Robot_Bipede.jpg" alt="Poster scientifique en grand">
 </div>
-
-<style>
 
 <style>
   :root {
