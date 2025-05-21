@@ -5,74 +5,10 @@ title: Electronique et Capteurs
 parent: Mécatronique et Systèmes
 ---
 
-# Électronique et Capteurs
-
-<hr>
-
-<div style="background-color:rgba(225, 225, 225, 0.7); padding: 20px; text-align: justify;">
-  Découvrez l'architecture électronique du robot, les composants clés et leurs fiches techniques détaillées. <strong>Explorez les cartes ci-dessous !</strong>
-</div>
-
-<!--Mettre schéma fonctionnel ou électrique-->
-
-## Composants Clés
-Cliquez sur une carte pour accéder à la fiche technique du composant.
-
-<div class="cards-container">
-  <!-- Carte 1 -->
-  <div class="electronic-card">
-    <h3>Servomoteurs Dynamixel AX-12</h3>
-    <p><strong>Rôle :</strong> Les muscles du robot<br>
-    • Font bouger les articulations<br>
-    • Contrôlent précisément les mouvements<br>
-    • Communiquent leur position</p>
-    <div class="card-footer"><a href="{{site.baseurl}}/arborescence/hardware/electronique/dynamixel/dynamixel">Voir la fiche technique</a></div>
-  </div>
-    <!-- Carte 2 -->
-  <div class="electronic-card">
-    <h3>Seeeduino XIAO nRF52840</h3>
-    <p><strong>Rôle :</strong> Le cerveau du robot<br>
-    • Reçoit et traite les informations<br>
-    • Prend les décisions<br>
-    • Commande les autres composants</p>
-    <div class="card-footer"><a href="{{site.baseurl}}/arborescence/hardware/electronique/microcontroleur/microcontroleur">Voir la fiche technique</a></div>
-  </div>
-  
-  <!-- Carte 3 -->
-  <div class="electronic-card">
-    <h3>Alimentation Secteur</h3>
-    <p><strong>Rôle :</strong> Le cœur énergétique<br>
-    • Fournit l'électricité à tout le système<br>
-    • Convertit le courant secteur<br>
-    • Protège contre les surtensions</p>
-    <div class="card-footer"><a href="{{site.baseurl}}/arborescence/hardware/electronique/alimentation/alimentation">Voir la fiche technique</a></div>
-  </div>
-  
-  <!-- Carte 4 -->
-  <div class="electronic-card">
-    <h3>Dynamixel Starter Kit</h3>
-    <p><strong>Rôle :</strong> Boîte à outils des servos<br>
-    • Interface de contrôle clé en main<br>
-    • Permet de tester et configurer<br>
-    • Facilite le développement</p>
-    <div class="card-footer"><a href="{{site.baseurl}}/arborescence/hardware/electronique/dynamixel/starterkit">Voir la fiche technique</a></div>
-  </div>
-  
-  <!-- Carte 5 -->
-  <div class="electronic-card">
-    <h3>Convertisseur DC/DC</h3>
-    <p><strong>Rôle :</strong> Adaptateur de tension<br>
-    • Ajuste la tension pour chaque composant<br>
-    • Stabilise l'alimentation<br>
-    • Optimise l'efficacité énergétique</p>
-    <div class="card-footer"><a href="{{site.baseurl}}/arborescence/hardware/electronique/convertisseur/convertisseur">Voir la fiche technique</a></div>
-  </div>
-</div>
-
 <style>
   :root {
     --primary: #1c5083;
-    --secondary: #4a89dc;
+    --secondary-color: #4a89dc;
     --text: #333;
     --light-gray: #f5f7fa;
   }
@@ -132,8 +68,22 @@ Cliquez sur une carte pour accéder à la fiche technique du composant.
   hr {
     border: none;
     height: 2px;
-    background: linear-gradient(90deg, var(--primary-color), rgba(28, 80, 131, 0.2));
+    background: linear-gradient(90deg, var(--secondary-color), rgba(28, 80, 131, 0.2));
     margin: 1.5rem 0;
+  }
+
+h2 {
+  color: var(--primary);
+  font-size: 14px
+}
+
+.intro-box {
+    background-color: rgba(216, 222, 224, 0.38) ;
+    text-align:justify;
+    padding: 1.25rem;
+    margin: 1.5rem 0;
+    border-radius: 0 4px 4px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
 
   .electronic-card:hover {
@@ -150,3 +100,58 @@ Cliquez sur une carte pour accéder à la fiche technique du composant.
     }
   }
 </style>
+
+# Électronique et Capteurs
+
+<hr>
+
+<div style="font-size: 1.25rem; font-weight: 300; text-align:justify; padding-bottom:20px">
+    Découvrez l'architecture électronique du robot, les composants clés et leurs fiches techniques détaillées. <strong>Explorez les cartes ci-dessous ! </strong>
+</div>
+
+<img src="{{site.baseurl}}/assets/img/electronique/plan-general.png" style="max-width:100%; border-radius: 8px;">
+
+<div style="text-align:justify;">
+  Le schéma ci-dessous représente le montage simplifié de Roby. Vous retrouverez le détails toutes les connexions par la suite. 
+</div>
+
+## Composants Clés
+
+<hr>
+
+<div class="intro-box">
+    <p>Cliquer sur l'une des cartes pour accéder à la documentation technique des composants utilisés.</p>
+</div>
+
+<div class="cards-container">
+  <!-- Carte 1 -->
+  <div class="electronic-card">
+    <h3>Servomoteurs Dynamixel AX-12</h3>
+    <p><strong>Rôle :</strong> Les muscles du robot<br>
+    • Font bouger les articulations<br>
+    • Contrôlent précisément les mouvements<br>
+    • Communiquent leur position</p>
+    <div class="card-footer"><a href="{{site.baseurl}}/arborescence/hardware/electronique/dynamixel/dynamixel">Voir la fiche technique</a></div>
+  </div>
+      
+  <!-- Carte 2 -->
+  <div class="electronic-card">
+    <h3>Alimentation Secteur</h3>
+    <p><strong>Rôle :</strong> Le cœur énergétique<br>
+    • Fournit l'électricité à tout le système<br>
+    • Convertit le courant secteur<br>
+    • Protège contre les surtensions</p>
+    <div class="card-footer"><a href="{{site.baseurl}}/arborescence/hardware/electronique/alimentation/alimentation">Voir la fiche technique</a></div>
+  </div>
+  
+  <!-- Carte 3 -->
+  <div class="electronic-card">
+    <h3>Dynamixel Starter Kit</h3>
+    <p><strong>Rôle :</strong> Boîte à outils des servos<br>
+    • Interface de contrôle clé en main<br>
+    • Permet de tester et configurer<br>
+    • Facilite le développement</p>
+    <div class="card-footer"><a href="{{site.baseurl}}/arborescence/hardware/electronique/dynamixel/starterkit">Voir la fiche technique</a></div>
+  </div>
+  
+
