@@ -84,6 +84,10 @@ h2 {
     margin: 1.5rem 0;
     border-radius: 0 4px 4px 0;
     box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    font-weight: bold;
+    text-align:center;
+    font-size:17px;
+    color:rgba(26, 26, 81, 0.72);
 }
 
   .electronic-card:hover {
@@ -112,8 +116,30 @@ h2 {
 <img src="{{site.baseurl}}/assets/img/electronique/plan-general.png" style="max-width:100%; border-radius: 8px;">
 
 <div style="text-align:justify;">
-  Le schéma ci-dessous représente le montage simplifié de Roby. Vous retrouverez le détails toutes les connexions par la suite. 
+  Le schéma ci-dessous représente le montage simplifié de Roby. Vous pouvez retrouvez le détail de toutes les connexions en suivant ce lien :
 </div>
+
+### Montage électronique détaillé
+
+<div style="text-align: justify; background-color: #f8f9fa; padding: 15px; margin-top:20px;border-radius: 8px; border-left: 4px solid #0d6efd; margin-bottom: 20px;">
+  Nous avons ajouté un <strong>hub externe</strong> afin de pouvoir connecter plusieurs servomoteurs directement, 
+  facilitant ainsi la gestion des liaisons et l'alimentation des moteurs.
+</div>
+
+<div style="background-color: #f8f9fa; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+  <ol style="padding-left: 25px; margin: 0;">
+    <li style="margin-bottom: 10px; padding-left: 10px;"><strong>PC ↔ U2D2</strong> : via câble USB/Micro-B USB <span style="color: #6c757d; font-size: 0.9em;">(connexion de contrôle)</span></li>
+    
+    <li style="margin-bottom: 10px; padding-left: 10px;"><strong> U2D2 Power Hub Board ↔ Hub Externe</strong> : connexion par port TTL <span style="color: #6c757d; font-size: 0.9em;">(liaison série)</span></li>
+    
+    <li style="margin-bottom: 10px; padding-left: 10px;"><strong> Hub Externe ↔ Servomoteurs</strong> : branchement vers les ports <code style="background: #e9ecef; padding: 2px 5px;">TTLIN</code> des servomoteurs</li>
+    
+    <li style="margin-bottom: 10px; padding-left: 10px;"><strong> Chaînage des servomoteurs</strong> : chaque servomoteur est relié du port <code style="background: #e9ecef; padding: 2px 5px;">TTLIN</code> au port <code style="background: #e9ecef; padding: 2px 5px;">TTLOUT</code> du suivant</li>
+    
+    <li style="padding-left: 10px;"><strong> Alimentation secteur ↔ U2D2 Power Hub Board</strong> : <span style="color: #dc3545;">11,1V recommandé</span> pour le fonctionnement optimal</li>
+  </ol>
+</div>
+
 
 ## Composants Clés
 
@@ -122,6 +148,9 @@ h2 {
 <div class="intro-box">
     <p>Cliquer sur l'une des cartes pour accéder à la documentation technique des composants utilisés.</p>
 </div>
+
+
+
 
 <div class="cards-container">
   <!-- Carte 1 -->
@@ -141,7 +170,7 @@ h2 {
     • Fournit l'électricité à tout le système<br>
     • Convertit le courant secteur<br>
     • Protège contre les surtensions</p>
-    <div class="card-footer"><a href="{{site.baseurl}}/arborescence/hardware/electronique/alimentation/alimentation">Voir la fiche technique</a></div>
+    <div class="card-footer"><a href="https://www.farnell.com/datasheets/2054525.pdf">Voir la fiche technique</a></div>
   </div>
   
   <!-- Carte 3 -->
@@ -151,7 +180,7 @@ h2 {
     • Interface de contrôle clé en main<br>
     • Permet de tester et configurer<br>
     • Facilite le développement</p>
-    <div class="card-footer"><a href="{{site.baseurl}}/arborescence/hardware/electronique/dynamixel/starterkit">Voir la fiche technique</a></div>
+    <div class="card-footer"><a href="https://emanual.robotis.com/docs/en/dxl/dxl-quick-start-guide/">Voir la fiche technique</a></div>
   </div>
   
 
