@@ -27,14 +27,6 @@ hr {
     padding: 20px;
 }
 
-.doc-card {
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    padding: 20px;
-    margin-bottom: 30px;
-}
-
 .doc-links {
     display: grid;
     grid-template-columns: 1fr;

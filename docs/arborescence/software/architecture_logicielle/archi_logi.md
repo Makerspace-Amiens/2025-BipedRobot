@@ -13,8 +13,15 @@ parent: Logiciel
     --text-color: #2d3748;
     --light-bg: #f8fafc;
     --border-color: #e2e8f0;
-    --angle-color: #1c5083;
-    --speed-color: #dd6b20;
+}
+
+.white-square-shadow {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.34);
+    margin: 50px auto;
+    max-width: 80%;
 }
 
 hr {
@@ -24,15 +31,24 @@ hr {
     margin: 1.5rem 0;
 }
 
+h2, h3 {
+    color: var(--primary-color);
+    margin-top: 1.5rem;
+}
 </style>
 
 # Architecture Logicielle
 
 <hr>
 
-<div style="font-size: 1.25rem; font-weight: 300; text-align:justify">
-    Cette section expose l'architecture logicielle mise en place pour répondre aux exigences et aux contraintes de notre projet.
+<div style="font-size: 1.25rem; font-weight: 300; text-align: justify;">
+    Cette section présente l'architecture logicielle mise en place pour répondre aux exigences et aux contraintes du projet.
 </div>
 
-## Logigramme
+## Logigramme de fonctionnement
 
+<div class="white-square-shadow">
+    <div class="diagram">
+        <img src="{{site.baseurl}}/assets/ArchitectureLogicielle.drawio.png" alt="Logigramme de l'architecture logicielle">
+    </div>
+</div>
