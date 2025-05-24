@@ -61,11 +61,12 @@ has_children: true
       <h2>Clémence Leleu</h2>
       <p style="font-size: 14px; text-align: justify;">En tant que responsable de la conception logicielle du projet, je souhaite me spécialiser en data science, robotique et objets connectés, dans l’objectif de développer des solutions innovantes.</p>
       <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/cl%C3%A9mence-l-558360282/" target="_blank" rel="noopener noreferrer">Envie d'en découvir plus sur moi ?</a></p>
-      <p><strong>GitHub:</strong> <a href="https://github.com/celmnce" target="_blank" rel="noopener noreferrer">Venez découvir mes autres projets</a></p>
+      <p><strong>Email:</strong> <a href="mailto:clemence.leleu04@gmail.com">clemence.leleu04@gmail.com</a></p>
       <hr style="border: 1px solid #f2f2f2; margin: 5px 0;">
     </div>
   </div>
 </div>
+
 
 <style>
   .team-container {
