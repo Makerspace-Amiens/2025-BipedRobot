@@ -50,7 +50,7 @@ h2, h3 {
 .icon-item {
     background-color: var(--primary-color);
     color: white;
-    width: 120px;
+    width: 150px;
     height: 80px;
     display: flex;
     align-items: center;
@@ -70,7 +70,7 @@ h2, h3 {
 }
 
 .icon-item a {
-    font-size: 15px;
+    font-size: 18px;
     text-decoration: none;
     color: white;
     width: 100%;
@@ -110,7 +110,7 @@ h2, h3 {
     background-color: rgba(250, 245, 245, 0.92);
     padding: 30px;
     border-radius: 8px;
-    max-width: 600px;
+    max-width: 800px;
     width: 90%;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     position: absolute;
@@ -149,26 +149,13 @@ h2, h3 {
 
 ## Logigramme de fonctionnement
 
-<div class="white-square-shadow">
-    <div class="diagram">
-        <img src="{{site.baseurl}}/assets/ArchitectureLogicielle.drawio.png" alt="Logigramme de l'architecture logicielle">
-    </div>
-</div>
-
-<div style="text-align:justify">
-    Vous retrouverez ci-dessous une explication détaillée de chaque étape du fonctionnement du robot.
-</div>
-
 <div class="icons-container">
     <div class="icon-item">
         <a href="javascript:void(0);" onclick="openModal('modal-initialisation')">Initialisation</a>
     </div>
     <div class="icon-item">
         <a href="javascript:void(0);" onclick="openModal('modal-lecture-data')">Lecture des données</a>
-    </div>
-    <div class="icon-item">
-        <a href="javascript:void(0);" onclick="openModal('modal-verification_data')">Vérification des données</a>
-    </div>
+    </div>    
     <div class="icon-item">
         <a href="javascript:void(0);" onclick="openModal('modal-equilibre')">Gestion de l'équilibre</a>
     </div>
@@ -177,45 +164,172 @@ h2, h3 {
     </div>     
 </div>
 
+<div class="white-square-shadow">
+    <div class="diagram">
+        <img src="{{site.baseurl}}/assets/ArchitectureLogicielle.drawio.png" alt="Logigramme de l'architecture logicielle">
+    </div>
+</div>
+
 <!-- Modals -->
 <div id="modal-initialisation" class="modal">
-    <div class="modal-content">
-        <span class="close" onclick="closeModal('modal-initialisation')">&times;</span>
-        <h2>Initialisation</h2>
-        <p>Contenu détaillé sur le processus d'initialisation...</p>
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modal-initialisation')">&times;</span>
+    <h2>INITIALISATION</h2>
+    <p>
+      L'initialisation prépare les servomoteurs et la connexion série pour garantir le bon fonctionnement du robot.
+    </p>
+    <hr>
+    <h3>Étapes :</h3>
+    <ul>
+      <li><strong>Connexion série</strong></li>
+      <li>
+        <strong>Configuration des servomoteurs</strong>
+        <p>Pour chaque moteur dans <code>DXL_IDS</code> :</p>
+        <ul>
+          <li>Activation du couple : <code>TORQUE_ENABLE = 1</code></li>
+          <li>Vitesse par défaut : <code>DEFAULT_MOVING_SPEED = 300</code></li>
+          <li>LED allumée : <code>LED_ON = 1</code></li>
+          <li>Lecture de la tension pour vérifier l'alimentation</li>
+        </ul>
+        <p>
+          En cas d’erreur (communication, surcharge, etc.), le processus s’arrête et un message d’erreur s’affiche.
+        </p>
+      </li>
+      <li>
+        <strong>Position initiale</strong>
+        <p>
+          Les moteurs amènent le robot à une position de repos définie par <code>INITIAL_POSITIONS</code>, en 1,5 seconde.
+        </p>
+      </li>
+    </ul>
     </div>
 </div>
 
 <div id="modal-lecture-data" class="modal">
-    <div class="modal-content">
-        <span class="close" onclick="closeModal('modal-lecture-data')">&times;</span>
-        <h2>Lecture des Données</h2>
-        <p>Contenu détaillé sur la lecture des données...</p>
-    </div>
-</div>
-
-<div id="modal-verification_data" class="modal">
-    <div class="modal-content">
-        <span class="close" onclick="closeModal('modal-verification_data')">&times;</span>
-        <h2>Vérification des données</h2>
-        <p>.....</p>
-    </div>
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modal-lecture-data')">&times;</span>
+    <h2>LECTURE DES DONNÉES</h2>
+    <p>
+      La lecture des données des servomoteurs permet de surveiller l’état du robot, d’analyser son comportement et d’assurer un diagnostic en temps réel.
+    </p>
+    <hr>
+    <h3>Données surveillées :</h3>
+    <ul>
+      <li>
+        <strong>Position actuelle</strong>
+        <p>
+          Lecture via <code>ADDR_PRESENT_POSITION</code> avec <code>packetHandler.read2ByteTxRx</code> :
+        </p>
+        <ul>
+          <li>Vérifier que les positions cibles sont atteintes</li>
+          <li>Asservir les mouvements avec retour</li>
+          <li>Détecter les blocages ou erreurs de déplacement</li>
+        </ul>
+      </li>
+      <li>
+        <strong>Tension d'alimentation</strong>
+        <p>
+          Lecture via <code>ADDR_PRESENT_VOLTAGE</code>, transformée en volts (division par 10) :
+        </p>
+        <ul>
+          <li>Surveiller l’état de la batterie</li>
+          <li>Détecter une alimentation insuffisante (&lt; 9V)</li>
+          <li>Prévenir les dommages aux moteurs</li>
+        </ul>
+      </li>
+      <li>
+        <strong>Vitesse actuelle</strong>
+        <p>
+          Accessible via <code>ADDR_PRESENT_SPEED</code> :
+        </p>
+        <ul>
+          <li>Analyser les performances des moteurs</li>
+          <li>Identifier les blocages mécaniques (vitesse nulle)</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
 </div>
 
 <div id="modal-equilibre" class="modal">
     <div class="modal-content">
         <span class="close" onclick="closeModal('modal-equilibre')">&times;</span>
         <h2>Gestion de l'équilibre</h2>
-        <p>Contenu d'exemple supplémentaire...</p>
+        <hr>
+        <p style="text-align: justify">
+            La gestion de l'équilibre est cruciale pour la stabilité d'un robot bipède, idéalement via des capteurs IMU et des algorithmes de Point de Moment Nul (ZMP) pour des ajustements en temps réel. Cependant, des défis d'intégration avec un microcontrôleur IMU ont limité cette capacité dans notre projet, nous amenant à nous reposer sur des mouvements pré-calculés pour la stabilité.
+        </p>
     </div>
 </div>
 
 <div id="modal-marche" class="modal">
-    <div class="modal-content">
-        <span class="close" onclick="closeModal('modal-marche')">&times;</span>
-        <h2>Cycle de Marche</h2>
-        <p>Contenu détaillé sur le cycle de marche...</p>
-    </div>
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modal-marche')">&times;</span>
+    <h2>CYCLE DE MARCHE</h2>
+    <p>
+      Le cycle de marche correspond à une séquence de mouvements prédéfinis permettant au robot bipède d’avancer. Il ne s’agit pas d’une marche adaptative, mais d’un enchaînement de positions fixes simulant les étapes d’un pas.
+    </p>
+    <hr>
+    <h3>Fonctionnement :</h3>
+    <ul>
+      <li>
+        <strong>Séquence de pas :</strong> le script <code>perform_walk_steps()</code> exécute plusieurs phases :
+        <ul>
+          <li><em>Levée de jambe :</em> une jambe est soulevée et avancée.</li>
+          <li><em>Pose et transfert de poids :</em> le robot transfère son poids sur cette jambe.</li>
+        </ul>
+      </li>
+      <li>
+        <strong>Durées contrôlées :</strong> chaque phase utilise des durées définies (<code>DUR_STEP_PHASE</code>, <code>DUR_PLANT</code>) pour ajuster vitesse et fluidité.
+      </li>
+      <li>
+        <strong>Synchronisation :</strong> les commandes sont envoyées en parallèle aux servomoteurs avec <code>GroupSyncWrite</code> pour des mouvements coordonnés.
+      </li>
+      <li>
+        <strong>Retour au repos :</strong> après les pas, le robot revient à sa position initiale.
+      </li>
+      <li>
+        <strong>Arrêt d'urgence :</strong> le programme interrompt immédiatement la marche si la touche ESPACE est pressée (<code>emergency_stop_triggered</code>).
+      </li>
+    </ul>
+
+    <h3>Limites actuelles :</h3>
+    <p>
+      Cette marche repose uniquement sur des positions fixes. Elle n’utilise pas de capteurs pour réagir en temps réel aux déséquilibres. Une marche vraiment autonome nécessiterait un système de stabilisation avec IMU et algorithmes avancés.
+    </p>
+  </div>
+</div>
+
+<div style="background-color: #f5f7fa; padding: 1em 1.2em; border-radius: 6px; margin-top: 1.5em; border-left: 4px solid #4a6ea9;">
+  <div style="font-size: 20px; color: #333; margin-bottom: 0.8em;">
+    <strong> Programmation Robot Bipède</strong> — 06/06/2025
+  </div>
+  <div style="font-size: 14px; color: #444;">
+    <ul style="list-style-type: disc; padding-left: 1.2em; margin-bottom: 1em;">
+      <li><strong>dynamixel_tests</strong>
+        <ul style="list-style-type: circle; padding-left: 1.2em; margin-top: 0.5em;">
+          <li><code style="font-size: 15px;">dynamixel_position_reader</code> : lit et affiche les positions actuelles des servomoteurs Dynamixel.</li>
+          <li><code style="font-size: 15px;">voltage_monitor</code> : surveille et rapporte la tension d'alimentation de chaque servomoteur.</li>
+        </ul>
+      </li>
+      <li><strong>robot_motion_routines</strong>
+        <ul style="list-style-type: circle; padding-left: 1.2em; margin-top: 0.5em;">
+          <li><code style="font-size: 15px;">robot_dance_controller</code> : contient les séquences de mouvements pour faire danser le robot.</li>
+          <li><code style="font-size: 15px;">robot_left_leg_init</code> : initialise les servomoteurs de la jambe gauche du robot.</li>
+          <li><code style="font-size: 15px;">robot_right_leg_init</code> : initialise les servomoteurs de la jambe droite du robot.</li>
+          <li><code style="font-size: 15px;">robot_walk_controller_with_emergency_stop</code> : gère la marche avec fonction d'arrêt d'urgence.</li>
+            <li><code style="font-size: 15px;">simple_dynamixel_controller</code> : interface basique pour contrôler les servomoteurs.</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <div style="font-size: 14px; margin-top: 0.5em;">
+      <a href="{{site.baseurl}}/assets/robot_dynamixel_programmation.zip"
+       download="robot_dynamixel_programmation.zip"
+       style="color: #2a6496; text-decoration: none; font-weight: 500;">
+      Télécharger le fichier ZIP
+    </a>
+  </div>
 </div>
 
 
