@@ -231,9 +231,8 @@ hr {
     <td class="tg-y698">Optimisation dynamique de la consommation avec stratégies d'économie adaptatives basées sur l'état des batteries.</td>
     <td class="tg-y698">
         <div class="module-algorithms">
-            <a href="#" class="algorithm-link">MPPT</a>
-            <a href="#" class="algorithm-link">Scheduling</a>
-            <a href="#" class="algorithm-link">ML prédictif</a>
+            <a href="https://wiki.osdev.org/Scheduling_Algorithms" class="algorithm-link">Scheduling</a>
+            <a href="https://h2o.ai/wiki/prediction/" class="algorithm-link">ML prédictif</a>
         </div>
     </td>
   </tr>
@@ -243,9 +242,9 @@ hr {
     <td class="tg-0pky">
         <div class="module-algorithms">
             <a href="{{site.baseurl}}/arborescence/software/module/algo/ia/rl" class="algorithm-link">RL</a>
-            <a href="#" class="algorithm-link">CNN</a>
-            <a href="#" class="algorithm-link">GNN</a>
-            <a href="#" class="algorithm-link">Bayesian Nets</a>
+            <a href="https://datascientest.com/convolutional-neural-network" class="algorithm-link">CNN</a>
+            <a href="https://seon.io/resources/dictionary/graph-neural-network-gnn/" class="algorithm-link">GNN</a>
+            <a href="https://www.bayesserver.com/docs/introduction/bayesian-networks/" class="algorithm-link">Bayesian Nets</a>
         </div>
     </td>
   </tr>
@@ -256,7 +255,7 @@ hr {
         <div class="module-algorithms">
             <a href="{{ site.baseurl }}/arborescence/software/module/algo/diag_tps_reel/anova" class="algorithm-link">ANOVA</a>
             <a href="{{ site.baseurl }}/arborescence/software/module/algo/acquisition_donnée/kalman" class="algorithm-link">Kalman</a>
-            <a href="#" class="algorithm-link">LSTM Anomaly</a>
+            <a href="https://nearshore-it.eu/articles/anomaly-detection-with-lstm/" class="algorithm-link">LSTM Anomaly</a>
         </div>
     </td>
   </tr>
@@ -265,9 +264,9 @@ hr {
     <td class="tg-0pky">Système hiérarchisé de gestion des pannes avec reconfiguration dynamique et stratégies de recovery.</td>
     <td class="tg-0pky">
         <div class="module-algorithms">
-            <a href="#" class="algorithm-link">FMEA</a>
-            <a href="#" class="algorithm-link">Arbres de Décision</a>
-            <a href="#" class="algorithm-link">Voting</a>
+            <a href="https://quality-one.com/fmea/" class="algorithm-link">FMEA</a>
+            <a href="https://www.ibm.com/fr-fr/think/topics/decision-trees" class="algorithm-link">Arbres de Décision</a>
+            <a href="https://soulpageit.com/ai-glossary/ensemble-voting-explained/" class="algorithm-link">Voting</a>
         </div>
     </td>
   </tr>
@@ -277,7 +276,7 @@ hr {
     <td class="tg-y698">
         <div class="module-algorithms">
             <a href="{{ site.baseurl }}/arborescence/software/module/algo/adapt_dynamique/fuzzylogic" class="algorithm-link">Fuzzy Logic</a>
-            <a href="#" class="algorithm-link">RL Adaptatif</a>
+            <a href="https://xonique.dev/blog/learning-in-adaptive-ai-a-practical-guide-for-developers/" class="algorithm-link">RL Adaptatif</a>
             <a href="{{ site.baseurl }}/arborescence/software/module/algo/adapt_dynamique/gradient" class="algorithm-link"> Gradient Stochastique </a>
         </div>
     </td>
@@ -287,9 +286,8 @@ hr {
     <td class="tg-0pky">Amélioration continue des performances via analyse des données opérationnelles.</td>
     <td class="tg-0pky">
         <div class="module-algorithms">
-            <a href="#" class="algorithm-link">GA</a>
-            <a href="#" class="algorithm-link">Bayesian Opt.</a>
-            <a href="#" class="algorithm-link">Swarm</a>
+            <a href="https://fr.wikipedia.org/wiki/Algorithme_g%C3%A9n%C3%A9tique" class="algorithm-link">GA</a>
+            <a href="https://www.hpe.com/emea_europe/en/what-is/swarm-learning.html" class="algorithm-link">Swarm</a>
         </div>
     </td>
   </tr>
@@ -298,9 +296,9 @@ hr {
     <td class="tg-y698">Ordonnancement précis des tâches critiques avec gestion des contraintes temporelles strictes.</td>
     <td class="tg-y698">
         <div class="module-algorithms">
-            <a href="#" class="algorithm-link">TDMA</a>
-            <a href="#" class="algorithm-link">RTOS Scheduler</a>
-            <a href="#" class="algorithm-link">Horloge Lamport</a>
+            <a href="https://fr.wikipedia.org/wiki/Acc%C3%A8s_multiple_par_r%C3%A9partition_temporelle" class="algorithm-link">TDMA</a>
+            <a href="https://www.alibabacloud.com/tech-news/a/shueduler/gv69skk9q4-scheduling-in-real-time-operating-systems" class="algorithm-link">RTOS Scheduler</a>
+            <a href="https://martinfowler.com/articles/patterns-of-distributed-systems/lamport-clock.html" class="algorithm-link">Horloge Lamport</a>
         </div>
     </td>
   </tr>
