@@ -75,7 +75,6 @@ title: Accueil
           </span>
         </p>
       </div>
-
       <div class="media-card animated-entry highlight-box" style="background: white; padding: 25px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); animation-delay: 1s;">
         <h3 style="margin-top: 0; margin-bottom:15px;">Vidéo de Présentation</h3>
         <div style="background: #f5f5f5; height: 180px; display: flex; align-items: center; justify-content: center; border-radius: 8px; overflow: hidden; position: relative;">
@@ -99,6 +98,15 @@ title: Accueil
   <span class="close" onclick="closeModal()">&times;</span>
   <img class="modal-content" id="modalImage" src="{{ site.baseurl }}/assets/img/Poster_Robot_Bipede.jpg" alt="Poster scientifique en grand">
 </div>
+
+<div class="credits-note">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#1c5083" width="30px" height="30px">
+        <path d="M12 4V2.21c0-.45-.54-.67-.85-.35l-2.8 2.79c-.2.2-.2.51 0 .71l2.79 2.79c.32.31.86.09.86-.36V6c3.31 0 6 2.69 6 6 0 .79-.15 1.56-.44 2.25-.15.36-.04.77.23 1.04.51.51 1.37.33 1.64-.34.37-.91.57-1.91.57-2.95 0-4.42-3.58-8-8-8zm0 14c-3.31 0-6-2.69-6-6 0-.79.15-1.56.44-2.25.15-.36.04-.77-.23-1.04-.51-.51-1.37-.33-1.64.34C4.2 9.96 4 10.96 4 12c0 4.42 3.58 8 8 8v1.79c0 .45.54.67.85.35l2.79-2.79c.2-.2.2-.51 0-.71l-2.79-2.79c-.31-.31-.85-.09-.85.36V18z"/>
+    </svg>
+    <p>L’intelligence artificielle a été utilisée pour assister la rédaction de cette documentation technique.</p>
+</div>
+
+
 
 <style>
   :root {
@@ -162,6 +170,35 @@ hr {
     opacity: 1;
     text-shadow: 0 0 5px rgba(255,255,255,0.5);
   }
+
+  .credits-note {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin: 2rem 0;
+    padding: 1rem;
+    background-color: rgba(28, 80, 131, 0.05);
+    border-radius: 6px;
+    font-size: 16px;
+    color: #555;
+    border-left: 3px solid var(--primary-color);
+}
+
+.credits-note svg {
+    flex-shrink: 0;
+}
+
+.credits-note p {
+    margin: 0;
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    .credits-note {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
 
   @keyframes fadeIn {
     from { opacity: 0; }

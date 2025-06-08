@@ -5,305 +5,488 @@ title: Environnement
 parent: Logiciel
 ---
 
-# Configuration Arduino - Seeeduino Xiao BLE
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
 
-<hr>
+<div class="content-wrapper">
+    <div class="hero-banner">
+        <div class="hero-content">
+            <h1>Configuration Arduino</h1>
+            <p class="hero-subtitle">Guide complet pour configurer votre environnement de développement</p>
+            <div class="badge-container">
+                <span class="badge">VS Code</span>
+                <span class="badge">Python</span>
+                <span class="badge">Dynamixel</span>
+            </div>
+        </div>
+    </div>
+    <div class="intro-card">
+        <div class="intro-text">
+            <h2>Bien démarrer</h2>
+            <p>Ce guide détaillé vous accompagne pas à pas dans la configuration de l'environnement de développement VS Code afin de pouvoir envoyer un code à la carte U2D2 du Robot Bipède. Suivez attentivement les étapes décrites ci-dessous pour préparer votre système.</p>
+        </div>
+    </div>
+    <div class="step-container">
+        <div class="step-header">
+            <div class="step-number">1</div>
+            <h2>Installation de l'IDE VS Code</h2>
+        </div>
+        <div class="step-content">
+            <div class="logo-container">
+                <img src="{{site.baseurl}}/assets/img/logos/vscode.png" alt="VS Code Logo">
+            </div>
+            <div class="step-text">
+                <p>Visual Studio Code (VS Code) est un éditeur de code source gratuit, léger et multiplateforme, très utilisé pour le développement embarqué, y compris avec les cartes Arduino, ESP32 et autres microcontrôleurs.</p>
+                <p>Si ce n'est pas déjà fait, téléchargez et installez la dernière version de VS Code depuis le site officiel :</p>
+                <div class="button-container">
+                    <a href="https://code.visualstudio.com/" class="download-button" target="_blank">
+                        <span>Télécharger VS Code</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="7 10 12 15 17 10"></polyline>
+                            <line x1="12" y1="15" x2="12" y2="3"></line>
+                        </svg>
+                    </a>
+                </div>
+                <p>Suivez les instructions d'installation correspondant à votre système d'exploitation (Windows, macOS ou Linux).</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="step-container">
+        <div class="step-header">
+            <div class="step-number">2</div>
+            <h2>Installer Python</h2>
+        </div>
+        <div class="step-content">
+            <div class="step-text">
+                <p>Pour exécuter des scripts Python dans VS Code, vous devez installer Python et configurer correctement l'environnement. Voici les étapes à suivre :</p>
+                
+                <div class="instruction-card">
+                    <div class="instruction-number">1</div>
+                    <div class="instruction-text">
+                        <p>Téléchargez et installez la dernière version de Python depuis le site officiel :</p>
+                        <div class="button-container">
+                            <a href="https://www.python.org/downloads/" class="secondary-button" target="_blank">
+                                <span>Télécharger Python</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                    <polyline points="7 10 12 15 17 10"></polyline>
+                                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                                </svg>
+                            </a>
+                        </div>
+                        <p class="note">Lors de l'installation, assurez-vous de cocher la case <strong>"Add Python to PATH"</strong> avant de cliquer sur <em>"Install Now"</em>.</p>
+                    </div>
+                </div>
+
+                <div class="instruction-card">
+                    <div class="instruction-number">2</div>
+                    <div class="instruction-text">
+                        <p>Une fois Python installé, ouvrez <strong>VS Code</strong> et installez l'extension Python :</p>
+                        <ol class="compact-list">
+                            <li>Ouvrez le menu des extensions (<code>Ctrl+Shift+X</code>)</li>
+                            <li>Recherchez "Python" (éditée par Microsoft)</li>
+                            <li>Cliquez sur <strong>"Installer"</strong></li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="instruction-card">
+                    <div class="instruction-number">3</div>
+                    <div class="instruction-text">
+                        <p>Configurez l'interpréteur Python :</p>
+                        <ol class="compact-list">
+                            <li>Créez un nouveau fichier <code>.py</code> (ex: <code>test.py</code>)</li>
+                            <li>Ouvrez la palette de commandes (<code>Ctrl+Shift+P</code>)</li>
+                            <li>Tapez <em>"Python: Select Interpreter"</em></li>
+                            <li>Choisissez la version de Python installée</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="test-instruction">
+                    <p>Testez votre configuration avec ce code simple :</p>
+                    <div class="code-block">
+                        <button class="copy-button" onclick="copyCode('code1')">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                            </svg>
+                            Copier
+                        </button>
+                        <pre><code id="code1">print("Hello, world!")</code></pre>
+                    </div>
+                    <p class="note">Exécutez avec <code>Ctrl+F5</code> ou en cliquant sur le bouton ▶ "Run" en haut à droite.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="step-container">
+        <div class="step-header">
+            <div class="step-number">3</div>
+            <h2>Installation des Librairies</h2>
+        </div>
+        <div class="step-content">
+            <div class="step-text">
+                <p>Pour contrôler les moteurs Dynamixel dans votre projet de robot bipède, installez les bibliothèques nécessaires puis importez-les dans votre code :</p>
+                
+                <div class="code-block">
+                    <button class="copy-button" onclick="copyCode('code2')">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                        </svg>
+                        Copier
+                    </button>
+                    <pre><code id="code2">from dynamixel_sdk import *  # Bibliothèque pour communiquer avec les moteurs Dynamixel
+import time                  # Pour gérer les temporisations
+import sys                   # Pour interagir avec le système
+import keyboard              # Pour détecter les appuis clavier</code></pre>
+                </div>
+                
+                <div class="info-card">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#1c5083" width="24px" height="24px">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/>
+                    </svg>
+                    <p>Assurez-vous d'avoir installé toutes les dépendances nécessaires avec <code>pip install dynamixel-sdk keyboard</code> avant d'exécuter votre script.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <style>
 :root {
     --primary-color: #1c5083;
+    --primary-light: #e6f0fa;
     --secondary-color: #143c64;
-    --accent-color: rgba(28, 80, 131, 0.1);
+    --accent-color: #4a90e2;
     --text-color: #333;
     --light-bg: #f8f9fa;
-    --border-color: #ddd;
+    --border-color: #e1e4e8;
+    --success-color: #28a745;
+    --info-color: #17a2b8;
+    --warning-color: #ffc107;
+    --danger-color: #dc3545;
 }
 
-h2{
-    color:var(--primary-color);
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-color);
+    line-height: 1.6;
+    background-color: #fff;
 }
 
-/* Typographie améliorée */
+h1, h2, h3, h4 {
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+h2 {
+    font-size: 1.75rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+pre, code {
+    font-family: 'Fira Code', monospace;
+    font-size: 0.9rem;
+}
+
 .content-wrapper {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
-
-/* Séparateur moderne */
-hr {
-    border: none;
-    height: 2px;
-    background: linear-gradient(90deg, var(--primary-color), rgba(28, 80, 131, 0.2));
-    margin: 1.5rem 0;
+.hero-banner {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    color: white;
+    padding: 3rem 2rem;
+    border-radius: 8px;
+    margin: 2rem 0;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
-/* Encart d'introduction */
-.intro-box {
-    background-color: var(--light-bg);
-    text-align:justify;
-    padding: 1.25rem;
-    margin: 1.5rem 0;
-    border-radius: 0 4px 4px 0;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
 }
 
-.url-copy-container {
-  display: flex;
-  align-items: center;
-  margin: 1rem 0;
-  border-radius: 6px;
-  overflow: hidden;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+.hero-content h1 {
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
 }
 
-.url-display {
-  flex-grow: 1;
-  padding: 0.75rem 1rem;
-  background-color: #f5f7fa;
-  font-family: 'SF Mono', 'Roboto Mono', monospace;
-  font-size: 0.9rem;
-  color: #2d3748;
-  overflow-x: auto;
-  white-space: nowrap;
-  border: 1px solid #e2e8f0;
-  border-right: none;
-  border-radius: 6px 0 0 6px;
+.hero-subtitle {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    margin-bottom: 1.5rem;
 }
 
-.copy-button {
-  position: relative;
-  padding: 0.75rem 1.25rem;
-  background-color: #4299e1;
-  color: white;
-  border: none;
-  font-weight: 500;
-  cursor: pointer;
-  transition: all 0.2s ease;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  border-radius: 0 6px 6px 0;
-}
-
-.copy-button:hover {
-  background-color: #3182ce;
-}
-
-.copy-icon {
-  font-size: 1.1rem;
-}
-
-.copied-confirm {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #48bb78;
-  opacity: 0;
-  transition: opacity 0.2s ease;
-  border-radius: 0 6px 6px 0;
-}
-
-.copy-button.copied .copy-text,
-.copy-button.copied .copy-icon {
-  opacity: 0;
-}
-
-.copy-button.copied .copied-confirm {
-  opacity: 1;
-}
-
-/* Style des algorithmes */
-.module-algorithms {
-    margin-top: 0.75rem;
+.badge-container {
     display: flex;
+    justify-content: center;
+    gap: 0.8rem;
     flex-wrap: wrap;
-    gap: 0.4rem;
 }
 
-.algorithm-link {
-    display: inline-block;
-    background-color: var(--accent-color);
-    color: var(--primary-color);
-    padding: 0.3rem 0.6rem;
-    border-radius: 4px;
-    text-decoration: none;
-    transition: all 0.2s ease;
-    border: 1px solid rgba(28, 80, 131, 0.2);
-    font-size: 0.8rem;
+.badge {
+    background-color: rgba(255,255,255,0.15);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
     font-weight: 500;
 }
 
-.algorithm-link:hover {
+.intro-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+    background-color: var(--light-bg);
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin: 2rem 0;
+    border-left: 4px solid var(--primary-color);
+}
+
+.intro-icon {
+    flex-shrink: 0;
+}
+
+.intro-text h2 {
+    margin-top: 0;
+    text-align:justify;
+    font-size: 1.5rem;
+}
+
+.step-container {
+    margin: 3rem 0;
+}
+
+.step-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.step-number {
     background-color: var(--primary-color);
     color: white;
-    transform: translateY(-1px);
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    flex-shrink: 0;
 }
 
-/* Tableau amélioré */
-.table-container {
-    overflow-x: auto;
-    margin: 2rem 0;
-    border-radius: 6px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-}
-
-.tg {
-    border-collapse: collapse;
-    border-spacing: 0;
-    width: 100%;
-    margin: 0 auto;
-}
-
-.tg td {
+.step-content {
+    background-color: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
     border: 1px solid var(--border-color);
-    padding: 12px 15px;
+}
+
+.logo-container {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.logo-container img {
+    max-width: 150px;
+    height: auto;
+    margin: 1rem 0;
+}
+
+.button-container {
+    margin: 1.5rem 0;
+}
+
+.download-button, .secondary-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.download-button {
+    background-color: var(--primary-color);
+    color: white;
+    border: 1px solid var(--primary-color);
+}
+
+.download-button:hover {
+    background-color: var(--secondary-color);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.secondary-button {
+    background-color: white;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+
+.secondary-button:hover {
+    background-color: var(--primary-light);
+}
+
+.instruction-card {
+    display: flex;
+    gap: 1rem;
+    margin: 1.5rem 0;
+    padding: 1.25rem;
+    background-color: var(--light-bg);
+    border-radius: 6px;
+    border-left: 3px solid var(--primary-color);
+}
+
+.instruction-number {
+    background-color: var(--primary-color);
+    color: white;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    flex-shrink: 0;
     font-size: 0.9rem;
+}
+
+.instruction-text {
+    flex-grow: 1;
+}
+
+.compact-list {
+    padding-left: 1.25rem;
+    margin: 0.5rem 0;
+}
+
+.compact-list li {
+    margin-bottom: 0.5rem;
+}
+
+.note {
+    font-size: 0.9rem;
+    color: #666;
+    font-style: italic;
+    margin-top: 0.5rem;
+}
+
+.test-instruction {
+    margin: 2rem 0;
+}
+
+.code-block {
+    position: relative;
+    background-color: #f5f7fa;
+    border-radius: 6px;
+    padding: 1rem;
+    margin: 1rem 0;
+    border: 1px solid var(--border-color);
+    overflow: hidden;
+}
+
+.code-block pre {
+    margin: 0;
+    overflow-x: auto;
+}
+
+.code-block code {
+    color: #2d3748;
     line-height: 1.5;
 }
 
-.tg th {
+.copy-button {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    padding: 0.25rem 0.75rem;
+    background-color: white;
     border: 1px solid var(--border-color);
-    background-color: var(--primary-color);
-    color: white;
-    padding: 14px 15px;
-    font-weight: 600;
-    text-align: left;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
 }
 
-.tg tr:nth-child(even) {
-    background-color: var(--light-bg);
+.copy-button:hover {
+    background-color: var(--primary-light);
+    border-color: var(--primary-color);
 }
 
-.tg tr:hover {
-    background-color: rgba(28, 80, 131, 0.05);
+.copy-button svg {
+    width: 14px;
+    height: 14px;
 }
 
-/* Section centrée */
-.section-header {
-    text-align: center;
-    margin: 2rem 0;
-    position: relative;
-    color: var(--primary-color);
+.info-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    background-color: var(--primary-light);
+    padding: 1rem;
+    border-radius: 6px;
+    margin: 1.5rem 0;
 }
 
-.section-header:after {
-    content: "";
-    display: block;
-    width: 120px;
-    height: 3px;
-    background: var(--primary-color);
-    margin: 1rem auto 0;
+.info-card svg {
+    flex-shrink: 0;
+    margin-top: 0.15rem;
 }
 
-/* Responsive */
+.info-card p {
+    margin: 0;
+}
+
 @media (max-width: 768px) {
-    .tg td, .tg th {
-        padding: 8px 10px;
-        font-size: 0.85rem;
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+    
+    .intro-card {
+        flex-direction: column;
+    }
+    
+    .instruction-card {
+        flex-direction: column;
+    }
+    
+    .step-header {
+        flex-direction: column;
+        align-items: flex-start;
     }
 }
 </style>
 
 <script>
-
-function copyToClipboard(elementId) {
-  const element = document.getElementById(elementId);
-  const text = element.textContent.trim();
-  navigator.clipboard.writeText(text);
-  
-  const button = element.nextElementSibling;
-  button.classList.add('copied');
-  
-  setTimeout(() => {
-    button.classList.remove('copied');
-  }, 2000);
+function copyCode(elementId) {
+    const element = document.getElementById(elementId);
+    const text = element.textContent;
+    navigator.clipboard.writeText(text.trim()).then(() => {
+        // Show feedback
+        const button = element.parentElement.querySelector('.copy-button');
+        button.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg> Copié!';
+        setTimeout(() => {
+            button.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg> Copier';
+        }, 2000);
+    });
 }
 </script>
-
-<div class="intro-box">
-    <p>
-        Ce guide détaillé vous accompagne pas à pas dans la configuration de l'environnement de développement Arduino afin de pouvoir programmer efficacement la carte Seeeduino Xiao BLE (nRF52840) pour notre projet. Suivez attentivement les étapes décrites ci-dessous pour préparer votre système. <a href="https://wiki.seeedstudio.com/XIAO_BLE/"> Documentation détaillée du constructeur</a>
-    </p>
-</div>
-
-## **Étape 1 : Installation de l'IDE Arduino**
-
-<img src="{{site.baseurl}}/assets/img/logos/arduino.png" style="display: block; margin: 50px auto 50px auto; max-width: 150px; height: auto;">
-
-<div style="text-align:justify;">
-L’Arduino IDE est un environnement de développement gratuit et open-source conçu pour programmer facilement des cartes électroniques Arduino.  Si ce n'est pas déjà fait, téléchargez et installez la dernière version de l'IDE Arduino depuis le site officiel : 
-<a href="https://www.arduino.cc/en/software"> Site Officiel Arduino </a>. Suivez les instructions d'installation pour votre système d'exploitation.
-</div>
-
-## **Étape 2 : Ajout de l'URL de Gestion des Cartes Seeeduino**
-
-L'IDE Arduino nécessite une URL supplémentaire pour pouvoir télécharger les informations et les pilotes nécessaires pour les cartes Seeeduino. Veuillez suivre les étapes suivantes : 
-
-1.  Ouvrez l'IDE Arduino.
-2.  Cliquez sur `Fichier` dans la barre de menu, puis sélectionnez `Préférences`.
-3.  Dans la fenêtre "Préférences", repérez le champ "URLs de gestion des cartes supplémentaires".
-4.  Ajoutez l'URL suivante à ce champ :
-
-<div class="url-copy-container">
-  <div class="url-display" id="seeed-link">
-    https://files.seeedstudio.com/arduino/package_seeeduino_boards_index.json
-  </div>
-  <button class="copy-button" onclick="copyToClipboard('seeed-link')">
-    <span class="copy-icon">⎘</span>
-    <span class="copy-text">Copier</span>
-    <span class="copied-confirm">Copié !</span>
-  </button>
-</div>
-
-
-Cliquez sur `OK` pour valider et enregistrer les modifications
-
-## **Étape 3 : Installation du Package de la Carte Seeeduino nRF52**
-
-Maintenant, nous pouvons télécharger et installer le support pour la Seeeduino Xiao BLE. 
-
-<div style="display: flex; align-items: flex-start; gap: 20px;">
-  <img src="{{site.baseurl}}/assets/img/arduino-config/boardmanager.png" alt="Board Manager" style="height: 500px;">
-  
-  <div style="max-width: 500px;">
-    <ol>
-      <li style="margin-bottom: 20px;">Dans l'IDE Arduino, allez dans <code>Tools</code> > <code>Board</code> > <code>Board Manager</code>. Vous allez tomber sur l'interface présente à gauche.</li>
-      <li style="margin-bottom: 20px;">Tapez dans la barre de recherche <code>seeeduino nrf</code> et choisissez le package encadré en bleu </li>
-    </ol>
-  </div>
-</div>
-
-## **Étape 4 : Sélection de la Carte Seeeduino Xiao BLE**
-
-Vous devez maintenant indiquer à l'IDE Arduino que vous travaillez avec une Seeeduino Xiao BLE.
-
-1.  Allez dans le menu `Tools`, puis `Boards`.
-2.  Recherchez dans la liste et sélectionnez l'entrée correspondant à votre carte. Elle devrait s'appeler `Seeeduino XIAO nRF52840 Sense`.
-
-## **Étape 5 : Connexion de la Carte et Sélection du Port Série**
-
-<div style="text-align: justify; max-width: 800px;">
-
-  <p>
-    Connectez votre carte Seeeduino Xiao BLE à votre ordinateur à l'aide d'un câble USB. L'IDE Arduino communique avec votre carte via le port série USB. Vous devez sélectionner le bon port.
-  </p>
-
-  <ol style="margin-left: 1em; margin-bottom: 1em;">
-    <li>Allez dans le menu <code>Tools</code>, puis <code>Port</code>.</li>
-    <li>Une liste des ports série disponibles s'affiche. Identifiez le port qui correspond à votre Seeeduino Xiao BLE. Sur Windows, il apparaît souvent avec un nom comme <code>COMx</code> (où x est un numéro). Si vous n'êtes pas sûr, essayez de débrancher et de rebrancher la carte pour voir quel port disparaît et réapparaît.</li>
-    <li>Cliquez sur le port correspondant à votre Seeeduino Xiao nRF52840 Sense pour le sélectionner.</li>
-  </ol>
-
-  <p>
-    Votre environnement de développement Arduino est maintenant configuré pour travailler avec la Seeeduino Xiao BLE (nRF52840). Vous pouvez commencer à écrire et à téléverser du code sur votre carte.
-  </p>
-
-</div>
