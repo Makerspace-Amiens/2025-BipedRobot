@@ -7,8 +7,6 @@ parent : Mécatronique et Systèmes
 
 # Architecture Matérielle
 
-
-
 Pour la conception mécanique, l'avancement s'est déroulé en 3 phases qui sont les suivantes : 
 
 
