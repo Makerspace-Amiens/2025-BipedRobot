@@ -7,14 +7,6 @@ parent : Mécatronique et Systèmes
 
 # Architecture Matérielle
 
-<!--Schéma global du robot
- → Vue interactive des composants (actionneurs, capteurs, contrôleurs).
- → Flux d’énergie et de données entre les éléments.
-
-
-Cadre mécanique
- → Matériaux utilisés et contraintes de poids.
- → Conception des articulations et axes de rotation. -->
 
 
 Pour la conception mécanique, l'avancement s'est déroulé en 3 phases qui sont les suivantes : 
