@@ -33,7 +33,7 @@ has_children: true
     <div class="modal-content">
       <span class="close" onclick="closeModal('modal-houda')">&times;</span>
       <h2>Hourie Houda</h2>
-      <p style="font-size: 14px; text-align: justify;">Description ici</p>
+      <p style="font-size: 14px; text-align: justify;">En tant que responsable mécanique sur le projet, je souhaite me spécialiser en production automatisée et usine connectée, afin de mettre un pas dans le monde de l'industrie. </p>
       <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/houda-hourie-118502317/" target="_blank" rel="noopener noreferrer">Envie d'en découvir plus sur moi ?</a></p>
       <p><strong>GitHub:</strong> <a href="https://github.com/houdahourie" target="_blank" rel="noopener noreferrer">Venez découvir mes autres projets</a></p>
       <hr style="border: 1px solid #f2f2f2; margin: 5px 0;">
