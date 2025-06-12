@@ -324,7 +324,7 @@ h2, h3 {
     </ul>
   </div>
   <div style="font-size: 14px; margin-top: 0.5em;">
-      <a href="{{site.baseurl}}/assets/robot_dynamixel_programmation.zip"
+      <a href="{{site.baseurl}}/assets/dynamixel_test.zip"
        download="robot_dynamixel_programmation.zip"
        style="color: #2a6496; text-decoration: none; font-weight: 500;">
       Télécharger le fichier ZIP

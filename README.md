@@ -13,7 +13,7 @@ Le projet **Robot Bipède** consiste à concevoir, développer et tester un robo
 - **`docs/`** : Contient la documentation du projet (installation, guide utilisateur, algorithmes utilisés, site web, etc.).
 - **`project/`** : Regroupe l'ensemble des détails du projet, incluant les parties software et hardware.
 - **`Simulation-RobotBiped`** : Contient la simulation 2D réalisé en python décrivant la marche humaine
-- 
+
 ## Auteurs 
 
 - [HOURIE HOUDA](https://github.com/houdahourie)
