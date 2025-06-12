@@ -1,8 +1,8 @@
 ---
 layout: default
-nav_order: 1
-title: Simulation 2D
-parent: Tests et Validation
+nav_order: 5
+title: Tests et Validation
+has_children: true
 ---
 
 # Simulation 2D de la Marche
