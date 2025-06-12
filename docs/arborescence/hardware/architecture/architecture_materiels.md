@@ -34,6 +34,9 @@ Le robot araignée, appartenant à l'association Unimakers d'Unislasalle Amiens 
 
 Le but est de se servir des liaisons en métals sur les pattes pour connecter les servomoteurs et créer les deux jambes du robot bipède. Cette base nous permets de fixer solidement les servomoteurs avec des supports métalliques démontables, offrant une meilleure rigidité, une plus grande précision des mouvements articulés, et une plus grande facilité d’assemblage et de réparation. Pour ceci, nous avons démonté 2 pattes du robot araignée.
 
+Robot Araignée Unimakers 
+
+
 "mettre photo araignée"
 
 
