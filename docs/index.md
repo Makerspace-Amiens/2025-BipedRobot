@@ -76,20 +76,13 @@ title: Accueil
         </p>
       </div>
       <div class="media-card animated-entry highlight-box" style="background: white; padding: 25px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); animation-delay: 1s;">
-        <h3 style="margin-top: 0; margin-bottom:15px;">Vidéo de Présentation</h3>
-        <div style="background: #f5f5f5; height: 180px; display: flex; align-items: center; justify-content: center; border-radius: 8px; overflow: hidden; position: relative;">
-          <video controls style="max-width: 100%; max-height: 100%; margin-top:15px; transition: transform 0.5s ease;" class="pulse-on-hover">
-            <source src="{{ site.baseurl }}/assets/mp4/intro_amiens.mp4" type="video/mp4">
-            Votre navigateur ne supporte pas la lecture de vidéos.
-          </video>
-          <div class="play-icon" style="position: absolute; width: 60px; height: 60px; background: rgba(28, 80, 131, 0.8); border-radius: 50%; display: flex; align-items: center; justify-content: center; pointer-events: none;">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
-              <path d="M8 5v14l11-7z"/>
-            </svg>
-          </div>
-        </div>
-        <p style="font-size: 0.9em; color: #888; text-align: center; margin-top: 10px;">Présentation, démonstration et résultats</p>
-      </div>
+        <h3 style="margin-top: 0; margin-bottom: 15px;">Vidéo de Présentation</h3>
+          <div style="background: #f5f5f5; aspect-ratio: 9 / 16; display: flex; align-items: center; justify-content: center; border-radius: 8px; overflow: hidden; position: relative;">
+          <iframe src="https://www.youtube.com/embed/GCEj2Phbj9k" title="YouTube Shorts" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="width: 100%; height: 100%; border: 0;">
+    </iframe>
+  </div>
+</div>
+
     </div>
   </div>
 </div>
