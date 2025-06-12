@@ -1,7 +1,5 @@
 # Robot Bipède
 
-(en cours de développement)
-
 ## Description
 
 Le projet **Robot Bipède** consiste à concevoir, développer et tester un robot autonome à deux jambes, capable de se déplacer de manière stable et contrôlée. Ce robot utilise des capteurs pour ajuster ses mouvements et maintenir son équilibre tout en marchant. L'objectif de ce projet est d'explorer les techniques de contrôle des moteurs, de gestion des capteurs, de stabilisation et d'optimisation de la marche.
@@ -14,9 +12,8 @@ Le projet **Robot Bipède** consiste à concevoir, développer et tester un robo
 ## Structure du projet
 - **`docs/`** : Contient la documentation du projet (installation, guide utilisateur, algorithmes utilisés, site web, etc.).
 - **`project/`** : Regroupe l'ensemble des détails du projet, incluant les parties software et hardware.
-
-## Prérequis
-
+- **`Simulation-RobotBiped`** : Contient la simulation 2D réalisé en python décrivant la marche humaine
+- 
 ## Auteurs 
 
 - [HOURIE HOUDA](https://github.com/houdahourie)
