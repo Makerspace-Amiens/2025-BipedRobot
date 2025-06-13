@@ -1,7 +1,7 @@
 ---
 layout: default
 nav_order: 2
-title: 1er Prototype Mécanique 
+title: Prototype Mécanique 
 parent: Tests et Validation
 ---
 
@@ -165,6 +165,11 @@ ul.feature-list li:before {
     <li>Couple max : ~15 kg.cm (à 12V)</li>
     <li>Angle de rotation : 300°</li>
 </ul>
+
+<div style="align-text:justify">
+    Pour plus de détails, vous pouvez consulter le lien suivants : <a href="{{site.baseurl}}/arborescence/hardware/electronique/dynamixel/dynamixel">Servomoteurs Dynamixel</a>
+
+</div>
 
 <table class="specs-table">
     <thead>
